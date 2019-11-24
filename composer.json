@@ -50,6 +50,20 @@
             "options": {
                 "symlink": false
             }
+        },
+        {
+            "type": "path",
+            "url": "../Audit",
+            "options": {
+                "symlink": false
+            }
+        },
+        {
+            "type": "path",
+            "url": "../Tracking",
+            "options": {
+                "symlink": false
+            }
         }
     ],
     "minimum-stability": "dev",
