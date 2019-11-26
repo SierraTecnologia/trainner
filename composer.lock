@@ -3684,12 +3684,12 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "4926ddc2c5149165d7fea7a8aa48e26d04efb6eb"
+                "reference": "89bfd7188907df0535b4e73d90d264894b06f864"
             },
             "require": {
                 "kassner/log-parser": "*",
                 "php": "^7.3.0",
-                "sierratecnologia/informate": "dev-master"
+                "sierratecnologia/population": "dev-master"
             },
             "bin": [
                 "bin/observador"
@@ -3732,7 +3732,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "9fddd0b01d26d01b60f606c8812a82cdf140f8cb"
+                "reference": "a4c1b6e2bd3a2dc92e36ed73922b87008aae9cf2"
             },
             "require": {
                 "php": "^7.3.0",
@@ -3885,6 +3885,43 @@
                 }
             ],
             "description": "informate",
+            "transport-options": {
+                "symlink": false
+            }
+        },
+        {
+            "name": "sierratecnologia/population",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../Population",
+                "reference": "de175863f9b6d9af4cb1f651e7c51db8d6885d0b"
+            },
+            "require": {
+                "sierratecnologia/informate": "dev-master"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Population\\PopulationProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Population\\": "src/"
+                }
+            },
+            "scripts": {
+                "post-install-cmd": [],
+                "post-update-cmd": [],
+                "post-create-project-cmd": []
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Population",
             "transport-options": {
                 "symlink": false
             }
