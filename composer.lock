@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3ad8fa70bd7a0040954b2c788de778dc",
+    "content-hash": "be91367f5c95444ec677bce6033d2825",
     "packages": [
         {
             "name": "cache/adapter-common",
@@ -6014,7 +6014,7 @@
             ],
             "description": "Audit",
             "transport-options": {
-                "symlink": false
+                "symlink": true
             }
         },
         {
@@ -6064,7 +6064,7 @@
             ],
             "description": "casa",
             "transport-options": {
-                "symlink": false
+                "symlink": true
             }
         },
         {
@@ -6208,7 +6208,7 @@
             ],
             "description": "Finder de Arquivos",
             "transport-options": {
-                "symlink": false
+                "symlink": true
             }
         },
         {
@@ -6252,7 +6252,7 @@
             ],
             "description": "informate",
             "transport-options": {
-                "symlink": false
+                "symlink": true
             }
         },
         {
@@ -6289,7 +6289,7 @@
             ],
             "description": "Population",
             "transport-options": {
-                "symlink": false
+                "symlink": true
             }
         },
         {
@@ -6337,7 +6337,7 @@
             ],
             "description": "Tracking",
             "transport-options": {
-                "symlink": false
+                "symlink": true
             }
         },
         {

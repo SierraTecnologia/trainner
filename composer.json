@@ -25,44 +25,9 @@
     "repositories": [
         {
             "type": "path",
-            "url": "../Informate",
+            "url": "../**",
             "options": {
-                "symlink": false
-            }
-        },
-        {
-            "type": "path",
-            "url": "../Population",
-            "options": {
-                "symlink": false
-            }
-        },
-        {
-            "type": "path",
-            "url": "../Finder",
-            "options": {
-                "symlink": false
-            }
-        },
-        {
-            "type": "path",
-            "url": "../Casa",
-            "options": {
-                "symlink": false
-            }
-        },
-        {
-            "type": "path",
-            "url": "../Audit",
-            "options": {
-                "symlink": false
-            }
-        },
-        {
-            "type": "path",
-            "url": "../Tracking",
-            "options": {
-                "symlink": false
+                "symlink": true
             }
         }
     ],
