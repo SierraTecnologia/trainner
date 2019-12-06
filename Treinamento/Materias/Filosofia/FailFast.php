@@ -2,8 +2,8 @@
 
 namespace Data\Treinamento\Materias\Filosofia;
 
-use Siravel\Models\Identity\Digital\Sitio;
-use Siravel\Models\Entytys\Digital\Midia\Video;
+use Informate\Models\Identity\Digital\Sitio;
+use Informate\Models\Entytys\Digital\Midia\Video;
 
  class FailFast extends Filosofia
  {

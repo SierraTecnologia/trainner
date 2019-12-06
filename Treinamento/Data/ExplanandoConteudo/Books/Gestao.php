@@ -5,7 +5,7 @@
 
 namespace Data\Treinamento\Data\ExplanandoConteudo\Books;
 
-use Siravel\Models\Entytys\Fisicos\Weapon;
+use Informate\Models\Entytys\Fisicos\Weapon;
 
 class Gestao extends Books
 {
