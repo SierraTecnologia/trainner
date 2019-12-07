@@ -2,7 +2,7 @@
 
 namespace Data\Treinamento\Artigos\Filosofia;
 
-use Informate\Models\Identity\Digital\Sitio;
+use Population\Models\Identity\Digital\Sitio;
 use Informate\Models\Entytys\Digital\Midia\Video;
 
  class Ti extends Filosofia
