@@ -106,16 +106,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.128.3",
+            "version": "3.128.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "9e46eae4974542b8e3e6107de857668b6968081d"
+                "reference": "eea8dbe60b23cbefdb3de7b635a0971a12067c6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/9e46eae4974542b8e3e6107de857668b6968081d",
-                "reference": "9e46eae4974542b8e3e6107de857668b6968081d",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/eea8dbe60b23cbefdb3de7b635a0971a12067c6f",
+                "reference": "eea8dbe60b23cbefdb3de7b635a0971a12067c6f",
                 "shasum": ""
             },
             "require": {
@@ -186,7 +186,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2019-12-11T19:13:12+00:00"
+            "time": "2019-12-12T19:15:28+00:00"
         },
         {
             "name": "beberlei/assert",
@@ -2178,16 +2178,16 @@
         },
         {
             "name": "fzaninotto/faker",
-            "version": "v1.9.0",
+            "version": "v1.9.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fzaninotto/Faker.git",
-                "reference": "27a216cbe72327b2d6369fab721a5843be71e57d"
+                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/27a216cbe72327b2d6369fab721a5843be71e57d",
-                "reference": "27a216cbe72327b2d6369fab721a5843be71e57d",
+                "url": "https://api.github.com/repos/fzaninotto/Faker/zipball/fc10d778e4b84d5bd315dad194661e091d307c6f",
+                "reference": "fc10d778e4b84d5bd315dad194661e091d307c6f",
                 "shasum": ""
             },
             "require": {
@@ -2200,7 +2200,9 @@
             },
             "type": "library",
             "extra": {
-                "branch-alias": []
+                "branch-alias": {
+                    "dev-master": "1.9-dev"
+                }
             },
             "autoload": {
                 "psr-4": {
@@ -2222,7 +2224,7 @@
                 "faker",
                 "fixtures"
             ],
-            "time": "2019-11-14T13:13:06+00:00"
+            "time": "2019-12-12T13:22:17+00:00"
         },
         {
             "name": "geerlingguy/ping",
@@ -4165,16 +4167,16 @@
         },
         {
             "name": "lesstif/php-jira-rest-client",
-            "version": "1.41.0",
+            "version": "1.42.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lesstif/php-jira-rest-client.git",
-                "reference": "12e0e7c4723eb2d5952e8360c35c955fa64d1cf5"
+                "reference": "c319cfd46623147776feb974cfbde6bddee316ee"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lesstif/php-jira-rest-client/zipball/12e0e7c4723eb2d5952e8360c35c955fa64d1cf5",
-                "reference": "12e0e7c4723eb2d5952e8360c35c955fa64d1cf5",
+                "url": "https://api.github.com/repos/lesstif/php-jira-rest-client/zipball/c319cfd46623147776feb974cfbde6bddee316ee",
+                "reference": "c319cfd46623147776feb974cfbde6bddee316ee",
                 "shasum": ""
             },
             "require": {
@@ -4182,7 +4184,7 @@
                 "ext-json": "*",
                 "monolog/monolog": "~1.12",
                 "netresearch/jsonmapper": "~0.11|^1.0",
-                "php": ">=5.5.9",
+                "php": ">=5.6.9",
                 "vlucas/phpdotenv": "~1.0|~2.0|^3.0"
             },
             "require-dev": {
@@ -4211,7 +4213,7 @@
                 {
                     "name": "KwangSeob Jeong",
                     "email": "lesstif@gmail.com",
-                    "homepage": "http://lesstif.com/"
+                    "homepage": "https://lesstif.com/"
                 }
             ],
             "description": "JIRA REST API Client for PHP Users.",
@@ -4221,7 +4223,7 @@
                 "jira-rest",
                 "rest"
             ],
-            "time": "2019-07-30T12:31:28+00:00"
+            "time": "2019-12-12T04:16:15+00:00"
         },
         {
             "name": "longman/telegram-bot",
@@ -4559,6 +4561,54 @@
                 "phpspreadsheet"
             ],
             "time": "2019-09-04T19:28:20+00:00"
+        },
+        {
+            "name": "madewithlove/illuminate-psr-cache-bridge",
+            "version": "1.0.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/madewithlove/illuminate-psr-cache-bridge.git",
+                "reference": "489c6cd856b133edf986387712922c0dc2223d26"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/madewithlove/illuminate-psr-cache-bridge/zipball/489c6cd856b133edf986387712922c0dc2223d26",
+                "reference": "489c6cd856b133edf986387712922c0dc2223d26",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "^5.0",
+                "php": ">=5.6.0",
+                "psr/cache": "^1.0"
+            },
+            "provide": {
+                "psr/cache-implementation": "1.0.0"
+            },
+            "require-dev": {
+                "cache/integration-tests": "^0.16.0",
+                "illuminate/cache": "^5.0",
+                "nesbot/carbon": "^1.3.0",
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Madewithlove\\IlluminatePsrCacheBridge\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "keywords": [
+                "Bridge",
+                "adapter",
+                "cache",
+                "implementation",
+                "laravel",
+                "psr-6"
+            ],
+            "time": "2019-07-01T06:39:22+00:00"
         },
         {
             "name": "maennchen/zipstream-php",
@@ -7261,28 +7311,29 @@
         },
         {
             "name": "phpoption/phpoption",
-            "version": "1.6.1",
+            "version": "1.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/schmittjoh/php-option.git",
-                "reference": "a8593bf5176bf3d3f2966942c530be19b44ec87c"
+                "reference": "318ad673ba36e53e10ca510aec1c54b4f2a5f2ae"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/a8593bf5176bf3d3f2966942c530be19b44ec87c",
-                "reference": "a8593bf5176bf3d3f2966942c530be19b44ec87c",
+                "url": "https://api.github.com/repos/schmittjoh/php-option/zipball/318ad673ba36e53e10ca510aec1c54b4f2a5f2ae",
+                "reference": "318ad673ba36e53e10ca510aec1c54b4f2a5f2ae",
                 "shasum": ""
             },
             "require": {
                 "php": "^5.5.9 || ^7.0"
             },
             "require-dev": {
+                "bamarni/composer-bin-plugin": "^1.3",
                 "phpunit/phpunit": "^4.8.35 || ^5.0 || ^6.0 || ^7.0"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.6-dev"
+                    "dev-master": "1.7-dev"
                 }
             },
             "autoload": {
@@ -7311,7 +7362,7 @@
                 "php",
                 "type"
             ],
-            "time": "2019-12-11T13:45:14+00:00"
+            "time": "2019-12-13T00:10:22+00:00"
         },
         {
             "name": "phpro/grumphp",
@@ -9696,7 +9747,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "273a38934325e9fbf7055e7f592ffd78de404f05"
+                "reference": "396b2c6dc3ec3fc9cc7f0919aad8d108e7f85cf7"
             },
             "require": {
                 "kassner/log-parser": "*",
@@ -9747,7 +9798,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "30a8b3f79eaf9db91a579efd1fbb588410b2bcb4"
+                "reference": "658eef58ae41e7b4cb8922d18be9c63a6c0c7c9e"
             },
             "require": {
                 "php": "^7.3.0",
@@ -9855,7 +9906,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "825be821a6523a9c22dc664d11c9d41ededb4a26"
+                "reference": "1097b43b619251107952bf27295da6283ab06820"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -10044,7 +10095,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "d7fb5df0777a9d618172f39f3ad6e5f13fa0e98d"
+                "reference": "80dcbf232c4dffca3ea0012f294074d009dc7487"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
@@ -10055,6 +10106,7 @@
                 "phpmetrics/phpmetrics": "*",
                 "rokde/laravel-slow-query-logger": "*",
                 "sierratecnologia/audit": "dev-master",
+                "spatie/laravel-analytics": "^3.7",
                 "wnx/laravel-stats": "*"
             },
             "type": "library",
@@ -10384,6 +10436,73 @@
                 "user"
             ],
             "time": "2019-10-15T07:39:07+00:00"
+        },
+        {
+            "name": "spatie/laravel-analytics",
+            "version": "3.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/spatie/laravel-analytics.git",
+                "reference": "4ac45abeaf68c3bb928154737ac257b004615a82"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/spatie/laravel-analytics/zipball/4ac45abeaf68c3bb928154737ac257b004615a82",
+                "reference": "4ac45abeaf68c3bb928154737ac257b004615a82",
+                "shasum": ""
+            },
+            "require": {
+                "google/apiclient": "^2.0",
+                "laravel/framework": "~5.8.0",
+                "madewithlove/illuminate-psr-cache-bridge": "^1.0",
+                "nesbot/carbon": "^1.21 | ^2.0",
+                "php": "^7.2"
+            },
+            "require-dev": {
+                "league/flysystem": ">=1.0.8",
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "~3.8.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Spatie\\Analytics\\AnalyticsServiceProvider"
+                    ],
+                    "aliases": {
+                        "Analytics": "Spatie\\Analytics\\AnalyticsFacade"
+                    }
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Spatie\\Analytics\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Freek Van der Herten",
+                    "email": "freek@spatie.be",
+                    "homepage": "https://murze.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A Laravel 5 package to retrieve Google Analytics data.",
+            "homepage": "https://github.com/spatie/laravel-analytics",
+            "keywords": [
+                "analytics",
+                "google",
+                "laravel",
+                "reports",
+                "retrieve",
+                "spatie"
+            ],
+            "time": "2019-02-27T16:25:09+00:00"
         },
         {
             "name": "spatie/laravel-medialibrary",
