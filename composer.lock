@@ -8884,16 +8884,16 @@
         },
         {
             "name": "phpro/grumphp",
-            "version": "v0.17.0",
+            "version": "v0.17.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpro/grumphp.git",
-                "reference": "4d7b88d8673de8cbba546577f81a7f02deed4d88"
+                "reference": "9c7d52b8027a03dcfe129db0751dd790227f5b91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpro/grumphp/zipball/4d7b88d8673de8cbba546577f81a7f02deed4d88",
-                "reference": "4d7b88d8673de8cbba546577f81a7f02deed4d88",
+                "url": "https://api.github.com/repos/phpro/grumphp/zipball/9c7d52b8027a03dcfe129db0751dd790227f5b91",
+                "reference": "9c7d52b8027a03dcfe129db0751dd790227f5b91",
                 "shasum": ""
             },
             "require": {
@@ -8985,7 +8985,7 @@
                 }
             ],
             "description": "A composer plugin that enables source code quality checks.",
-            "time": "2019-11-29T13:17:55+00:00"
+            "time": "2019-12-20T06:31:09+00:00"
         },
         {
             "name": "phpseclib/phpseclib",
@@ -11626,7 +11626,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "61d5c13640a21004bc88ffef540639b4e55eecaf"
+                "reference": "ddedaa3252e97fc2ddbe93740424aaf9e25193ec"
             },
             "require": {
                 "kassner/log-parser": "*",
@@ -11677,7 +11677,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "a8f73535c6914dad8385dea7275e68c3b487c5d7"
+                "reference": "977b48d179a111f2f00473a2d6c3556ed0bb8558"
             },
             "require": {
                 "php": "^7.3.0",
@@ -11874,7 +11874,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "693daa72ee4bab4712e2cfc4e96ce6db9df8d7a5"
+                "reference": "9ed9fc6b9dd3e23a61c30dc28be5127a7b2b6484"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -11976,7 +11976,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Informate",
-                "reference": "596c3b7b46f0632c3f5a03548d121341aa6bd846"
+                "reference": "9b1c8fce731943df5957b3f0297845f941c50e7a"
             },
             "require": {
                 "php": ">=7.2.0",
@@ -12021,7 +12021,7 @@
             "dist": {
                 "type": "path",
                 "url": "../LaravelSupport",
-                "reference": "2761154dd45871140e73bb12d6e6d82e65be6cfa"
+                "reference": "c99602e137faddf1588b3f7324f9826f41c00dfb"
             },
             "require": {
                 "barryvdh/laravel-debugbar": "*",
@@ -12127,7 +12127,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Population",
-                "reference": "1c0c3f35fd4d76385c212dd19ed3fb3fc97b496b"
+                "reference": "24e019e41e4bfa363daf9ceb29aec4841d1d9956"
             },
             "require": {
                 "sierratecnologia/informate": "dev-master"
@@ -12164,7 +12164,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "49132da6e893f9dfac50476dc95441e608ddf72b"
+                "reference": "658eae9d80d83cde77eb53c4655ee236b9eddd61"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
