@@ -11626,7 +11626,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "c8fbb186dd1119318097134283387a785f40211e"
+                "reference": "61d5c13640a21004bc88ffef540639b4e55eecaf"
             },
             "require": {
                 "kassner/log-parser": "*",
@@ -11677,7 +11677,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "6fe887a00971efbde321636c4c0f29456ed58a16"
+                "reference": "a8f73535c6914dad8385dea7275e68c3b487c5d7"
             },
             "require": {
                 "php": "^7.3.0",
@@ -11874,7 +11874,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "b99a7ef891cdeb77bf61a7155c459c5acf9adbb6"
+                "reference": "693daa72ee4bab4712e2cfc4e96ce6db9df8d7a5"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -11976,7 +11976,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Informate",
-                "reference": "c01b9332fbb654b3088932f7f9f1cc1fd2635d4c"
+                "reference": "596c3b7b46f0632c3f5a03548d121341aa6bd846"
             },
             "require": {
                 "php": ">=7.2.0",
@@ -12127,7 +12127,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Population",
-                "reference": "c52c61a32990d4a1807f8a5ff05740c6cf2051a0"
+                "reference": "1c0c3f35fd4d76385c212dd19ed3fb3fc97b496b"
             },
             "require": {
                 "sierratecnologia/informate": "dev-master"
@@ -12164,7 +12164,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "029c539f68083a29ac7faa4a23839117bfb71f51"
+                "reference": "49132da6e893f9dfac50476dc95441e608ddf72b"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
