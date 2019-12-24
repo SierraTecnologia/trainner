@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\View;
 use Log;
 use App;
 use Config;
+use Route;
+use Illuminate\Routing\Router;
 
 use Support\ClassesHelpers\Traits\Models\ConsoleTools;
 
@@ -72,9 +74,8 @@ class TrainnerProvider extends ServiceProvider
         }
 
         /**
-         * Facilitador Routes
+         * Trainner Routes
          */
-        // $router->middleware('siravel-analytics', Analytics::class);
         Route::group([
             'namespace' => '\Trainner\Http\Controllers',
         ], function ($router) {
@@ -123,8 +124,6 @@ class TrainnerProvider extends ServiceProvider
             base_path('vendor/sierratecnologia/trainner/src/Console/Commands') => '\Trainner\Console\Commands',
         ]);
     }
-
-
 
     /**
      * Get the services provided by the provider.
