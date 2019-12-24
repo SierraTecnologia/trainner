@@ -40,7 +40,7 @@ use Session;
 use Bkwld\Library;
 use ReflectionClass;
 
-class Facilitador
+class Trainner
 {
     protected $version;
     protected $filesystem;
