@@ -5,7 +5,7 @@ use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 
-class CreateBotsTables extends Migration
+class CreateTrainnerAlunosTables extends Migration
 {
     /**
      * Run the migrations.
@@ -20,7 +20,7 @@ class CreateBotsTables extends Migration
             $table->string('code_top');
             $table->string('code_bot');
 
-            $table->date('init_at');
+            $table->date('init_at')->nullable();
 
             $table->timestamps();
         });
