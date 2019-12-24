@@ -11682,7 +11682,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "58a7387b58318379dbdd974b4af23a96c01f9bf6"
+                "reference": "bbf469395931cc564d7910c5ce57a54acd71b071"
             },
             "require": {
                 "php": "^7.3.0",
@@ -11879,7 +11879,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "c0a169db2a66612a662b0bbacc540ab77bcf4000"
+                "reference": "6a36a0d66a9c23ab4d56476d69d974b3228b5fee"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -11981,7 +11981,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Gamer",
-                "reference": "847ba1641d1920caa5b6bbe4ee97a93b14e2a8fd"
+                "reference": "712a980fb5915791cb65a2a41c008ed9d9bde457"
             },
             "require": {
                 "sierratecnologia/audit": "dev-master",
@@ -12208,7 +12208,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "8a32ee1068d99c0691656e230e421c3eaa52f2dc"
+                "reference": "6c849bc8d6c3f0baf450c9d13e35b7c2ac02e764"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
