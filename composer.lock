@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "be91367f5c95444ec677bce6033d2825",
+    "content-hash": "87212718274aeed373f0800943fd4b4f",
     "packages": [
         {
             "name": "anahkiasen/underscore-php",
@@ -11682,7 +11682,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "3362e560532cab39101dde9c9338f740369b4f5d"
+                "reference": "aba146a405d80af35cbe284d9500ba0d79198b5f"
             },
             "require": {
                 "php": "^7.3.0",
@@ -11971,6 +11971,45 @@
                 }
             ],
             "description": "Finder de Arquivos",
+            "transport-options": {
+                "symlink": true
+            }
+        },
+        {
+            "name": "sierratecnologia/gamer",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../Gamer",
+                "reference": "a34e2f31524373f700aefe027934c6e0e1d27312"
+            },
+            "require": {
+                "sierratecnologia/audit": "dev-master",
+                "sierratecnologia/finder": "dev-master",
+                "sierratecnologia/tracking": "dev-master"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Gamer\\GamerProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Gamer\\": "src/"
+                }
+            },
+            "scripts": {
+                "post-install-cmd": [],
+                "post-update-cmd": [],
+                "post-create-project-cmd": []
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Game",
             "transport-options": {
                 "symlink": true
             }
@@ -16241,6 +16280,8 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "sierratecnologia/finder": 20,
+        "sierratecnologia/gamer": 20,
         "sierratecnologia/casa": 20
     },
     "prefer-stable": true,
