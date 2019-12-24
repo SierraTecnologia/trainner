@@ -5722,24 +5722,23 @@
         },
         {
             "name": "maatwebsite/excel",
-            "version": "3.1.17",
+            "version": "3.1.18",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Maatwebsite/Laravel-Excel.git",
-                "reference": "bd377ad37b285d9bc25c9adca360e4392041dea6"
+                "reference": "d0231ab1f4bb93c8695630cb445ada1fdc54add0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/bd377ad37b285d9bc25c9adca360e4392041dea6",
-                "reference": "bd377ad37b285d9bc25c9adca360e4392041dea6",
+                "url": "https://api.github.com/repos/Maatwebsite/Laravel-Excel/zipball/d0231ab1f4bb93c8695630cb445ada1fdc54add0",
+                "reference": "d0231ab1f4bb93c8695630cb445ada1fdc54add0",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "illuminate/support": "5.5.*|5.6.*|5.7.*|5.8.*|^6.0",
-                "opis/closure": "^3.1",
                 "php": "^7.0",
-                "phpoffice/phpspreadsheet": "^1.6"
+                "phpoffice/phpspreadsheet": "^1.10"
             },
             "require-dev": {
                 "mockery/mockery": "^1.1",
@@ -5786,7 +5785,7 @@
                 "php",
                 "phpspreadsheet"
             ],
-            "time": "2019-09-04T19:28:20+00:00"
+            "time": "2019-12-24T10:40:12+00:00"
         },
         {
             "name": "madewithlove/illuminate-psr-cache-bridge",
@@ -11632,7 +11631,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "178b078cea38980d2aa5c14136fd06bc0e401dd3"
+                "reference": "0991f284abe8dccd61bc88bfb37ae5e098542d7b"
             },
             "require": {
                 "kassner/log-parser": "*",
@@ -11683,7 +11682,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "d8bbae67ba4b54c67aba63a940b2f1489b5973f9"
+                "reference": "c7cedb17294e63e79e515f6efc2adb161f8b2ff4"
             },
             "require": {
                 "php": "^7.3.0",
@@ -11880,7 +11879,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "a3f829b4fd0978fd76684477d68a62c713542f05"
+                "reference": "82d410df6d30a2343c51fe497eda22884b877e5d"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -11982,7 +11981,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Gamer",
-                "reference": "d73c0b9eba820d877b86c14faa997a7ca437b457"
+                "reference": "2b5265ca83e6a29d67ddaa79e9e7168cab802827"
             },
             "require": {
                 "sierratecnologia/audit": "dev-master",
@@ -12066,7 +12065,7 @@
             "dist": {
                 "type": "path",
                 "url": "../LaravelSupport",
-                "reference": "391327d50238023ff6cdf8801f32065901c23de9"
+                "reference": "f227cd8446bac136e23037899599d37ce86facff"
             },
             "require": {
                 "barryvdh/laravel-debugbar": "*",
@@ -12172,7 +12171,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Population",
-                "reference": "ec7fb5d4c32f5f058bc92136ff12fd62222ba4f4"
+                "reference": "9d0b065a29865237fe58d9c29c01cd8c5bf992cc"
             },
             "require": {
                 "sierratecnologia/informate": "dev-master"
@@ -12209,7 +12208,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "cf46d7722a00502a49361735dd22674883519146"
+                "reference": "30d78266ccb83b68aa63f5a4cc453b29b1205c47"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
