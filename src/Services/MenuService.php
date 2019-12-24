@@ -10,7 +10,7 @@ class MenuService
         $trainner = [];
         $trainner[] = [
             'text'        => 'Treinos',
-            'url'         => route('trainner.analytics'),
+            'url'         => url('trainner/home'), //route('trainner.home'),
             'icon'        => 'dashboard',
             'icon_color'  => 'blue',
             'label_color' => 'success',

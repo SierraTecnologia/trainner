@@ -57,9 +57,10 @@ class TrainnerProvider extends ServiceProvider
         // Register configs, migrations, etc
         $this->registerDirectories();
 
-        $this->app->booted(function () {
-            $this->routes();
-        });
+        // // COloquei no register pq nao tava reconhecendo as rotas para o adminlte
+        // $this->app->booted(function () {
+        //     $this->routes();
+        // });
     }
 
     /**
@@ -92,6 +93,7 @@ class TrainnerProvider extends ServiceProvider
         
 
         $this->setProviders();
+        $this->routes();
 
 
 
