@@ -31,6 +31,8 @@ class TrainnerProvider extends ServiceProvider
         // \Trainner\Providers\TrainnerServiceProvider::class,
         // \Trainner\Providers\TrainnerRouteProvider::class,
 
+        \Finder\FinderProvider::class,
+        \Gamer\GamerProvider::class,
         \Casa\CasaProvider::class,
     ];
 
