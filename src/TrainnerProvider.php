@@ -52,6 +52,32 @@ class TrainnerProvider extends ServiceProvider
         
         // Register configs, migrations, etc
         $this->registerDirectories();
+
+        $this->app->booted(function () {
+            $this->routes();
+        });
+    }
+
+    /**
+     * Register the tool's routes.
+     *
+     * @return void
+     */
+    protected function routes()
+    {
+        if ($this->app->routesAreCached()) {
+            return;
+        }
+
+        /**
+         * Facilitador Routes
+         */
+        // $router->middleware('siravel-analytics', Analytics::class);
+        Route::group([
+            'namespace' => '\Trainner\Http\Controllers',
+        ], function ($router) {
+            require __DIR__.'/Routes/web.php';
+        });
     }
 
     /**
