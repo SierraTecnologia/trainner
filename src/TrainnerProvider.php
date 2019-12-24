@@ -2,13 +2,30 @@
 
 namespace Trainner;
 
-use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\View;
+use Illuminate\Foundation\AliasLoader;
 use Illuminate\Support\ServiceProvider;
+use Trainner\Services\TrainnerService;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\View;
+
+use Log;
+use App;
+use Config;
+
+use Support\ClassesHelpers\Traits\Models\ConsoleTools;
+
+use Trainner\Facades\Trainner as TrainnerFacade;
+use Illuminate\Contracts\Events\Dispatcher;
+use JeroenNoten\LaravelAdminLte\Events\BuildingMenu;
 
 class TrainnerProvider extends ServiceProvider
 {
+    use ConsoleTools;
+
+    public static $aliasProviders = [
+        'Trainner' => \Trainner\Facades\Trainner::class,
+    ];
+
     public static $providers = [
         // \Trainner\Providers\TrainnerEventServiceProvider::class,
         // \Trainner\Providers\TrainnerServiceProvider::class,
@@ -22,20 +39,19 @@ class TrainnerProvider extends ServiceProvider
      */
     public function boot()
     {
-        // $this->publishes([
-        //     __DIR__.'/Publishes/resources/tools' => base_path('resources/tools'),
-        //     __DIR__.'/Publishes/app/Services' => app_path('Services'),
-        //     __DIR__.'/Publishes/public/js' => base_path('public/js'),
-        //     __DIR__.'/Publishes/public/css' => base_path('public/css'),
-        //     __DIR__.'/Publishes/public/img' => base_path('public/img'),
-        //     __DIR__.'/Publishes/config' => base_path('config'),
-        //     __DIR__.'/Publishes/routes' => base_path('routes'),
-        //     __DIR__.'/Publishes/app/Controllers' => app_path('Http/Controllers/Trainner'),
-        // ]);
-
-        // $this->publishes([
-        //     __DIR__.'../resources/views' => base_path('resources/views/vendor/Trainner'),
-        // ], 'SierraTecnologia Trainner');
+        
+        $events->listen(BuildingMenu::class, function (BuildingMenu $event) {
+            $event->menu->add('Trainner');
+            $event->menu->add([
+                'text'    => 'Trainner',
+                'icon'    => 'cog',
+                'nivel' => \App\Models\Role::$GOOD,
+                'submenu' => \Trainner\Services\MenuService::getAdminMenu(),
+            ]);
+        });
+        
+        // Register configs, migrations, etc
+        $this->registerDirectories();
     }
 
     /**
@@ -43,36 +59,101 @@ class TrainnerProvider extends ServiceProvider
      */
     public function register()
     {
+        $this->mergeConfigFrom($this->getPublishesPath('config/sitec/trainner.php'), 'sitec.trainner');
+        
+
         $this->setProviders();
 
-        // // View namespace
-        // $this->loadViewsFrom(__DIR__.'/Views', 'Trainner');
 
-        // if (is_dir(base_path('resources/Trainner'))) {
-        //     $this->app->view->addNamespace('Trainner-frontend', base_path('resources/Trainner'));
-        // } else {
-        //     $this->app->view->addNamespace('Trainner-frontend', __DIR__.'/Publishes/resources/Trainner');
-        // }
 
-        $this->loadMigrationsFrom(__DIR__.'/Migrations');
+        // Register Migrations
+        $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
 
-        // // Configs
-        // $this->app->config->set('Trainner.modules.Trainner', include(__DIR__.'/config.php'));
+        $loader = AliasLoader::getInstance();
+        $loader->alias('Trainner', TrainnerFacade::class);
 
+        $this->app->singleton('trainner', function () {
+            return new Trainner();
+        });
+        
         /*
         |--------------------------------------------------------------------------
-        | Register the Commands
+        | Register the Utilities
         |--------------------------------------------------------------------------
         */
-
-        $this->commands([]);
-    }
-
-    private function setProviders()
-    {
-        (new Collection(self::$providers))->map(function ($provider) {
-            $this->app->register($provider);
+        /**
+         * Singleton Trainner
+         */
+        $this->app->singleton(TrainnerService::class, function($app)
+        {
+            Log::info('Singleton Trainner');
+            return new TrainnerService(config('sitec.trainner'));
         });
+
+        // Register commands
+        $this->registerCommandFolders([
+            base_path('vendor/sierratecnologia/trainner/src/Console/Commands') => '\Trainner\Console\Commands',
+        ]);
     }
+
+
+
+    /**
+     * Get the services provided by the provider.
+     *
+     * @return array
+     */
+    public function provides()
+    {
+        return [
+            'trainner',
+        ];
+    }
+
+    /**
+     * Register configs, migrations, etc
+     *
+     * @return void
+     */
+    public function registerDirectories()
+    {
+        // Publish config files
+        $this->publishes([
+            // Paths
+            $this->getPublishesPath('config/sitec') => config_path('sitec'),
+        ], ['config',  'sitec', 'sitec-config']);
+
+        // // Publish trainner css and js to public directory
+        // $this->publishes([
+        //     $this->getDistPath('trainner') => public_path('assets/trainner')
+        // ], ['public',  'sitec', 'sitec-public']);
+
+        $this->loadViews();
+        $this->loadTranslations();
+
+    }
+
+    private function loadViews()
+    {
+        // View namespace
+        $viewsPath = $this->getResourcesPath('views');
+        $this->loadViewsFrom($viewsPath, 'trainner');
+        $this->publishes([
+            $viewsPath => base_path('resources/views/vendor/trainner'),
+        ], ['views',  'sitec', 'sitec-views']);
+
+    }
+    
+    private function loadTranslations()
+    {
+        // Publish lanaguage files
+        $this->publishes([
+            $this->getResourcesPath('lang') => resource_path('lang/vendor/trainner')
+        ], ['lang',  'sitec', 'sitec-lang', 'translations']);
+
+        // Load translations
+        $this->loadTranslationsFrom($this->getResourcesPath('lang'), 'trainner');
+    }
+
 
 }

@@ -14,11 +14,14 @@ class CreateBotsTables extends Migration
      */
     public function up()
     {
-        Schema::create('trainner_alunos', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('name')->nullable();
-            $table->string('type')->nullable();
-            $table->integer('bot_internet_url_form_id')->nullable();
+        Schema::create('trainners', function (Blueprint $table) {
+            $table->string('code')->unique();                                                                                                                                                                      
+            $table->primary('code'); 
+            $table->string('code_top');
+            $table->string('code_bot');
+
+            $table->date('init_at');
+
             $table->timestamps();
         });
     }
