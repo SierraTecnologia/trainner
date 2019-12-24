@@ -3,9 +3,11 @@
 namespace Trainner\Models;
 
 use Support\Models\Base;
+use Population\Traits\HasServicesAndAccounts;
 
 class Trainner extends Base
 {
+    use HasServicesAndAccounts;
 
     public $incrementing = false;
     protected $casts = [
