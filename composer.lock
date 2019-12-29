@@ -5046,16 +5046,16 @@
         },
         {
             "name": "league/flysystem",
-            "version": "1.0.61",
+            "version": "1.0.62",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/flysystem.git",
-                "reference": "4fb13c01784a6c9f165a351e996871488ca2d8c9"
+                "reference": "14dd5d7dff5fbc29ca9a2a53ff109760e40d91a0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/4fb13c01784a6c9f165a351e996871488ca2d8c9",
-                "reference": "4fb13c01784a6c9f165a351e996871488ca2d8c9",
+                "url": "https://api.github.com/repos/thephpleague/flysystem/zipball/14dd5d7dff5fbc29ca9a2a53ff109760e40d91a0",
+                "reference": "14dd5d7dff5fbc29ca9a2a53ff109760e40d91a0",
                 "shasum": ""
             },
             "require": {
@@ -5126,7 +5126,7 @@
                 "sftp",
                 "storage"
             ],
-            "time": "2019-12-08T21:46:50+00:00"
+            "time": "2019-12-29T14:46:55+00:00"
         },
         {
             "name": "league/flysystem-cached-adapter",
@@ -11633,7 +11633,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "f6cb74efa04c3f42839f7c8de1f2becf178901c7"
+                "reference": "077145c4f978e4678683c7cffe5b4717bc038861"
             },
             "require": {
                 "kassner/log-parser": "*",
@@ -11684,7 +11684,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "fd512616d81f31e46444d96b0e2d9c3d803e0740"
+                "reference": "4b24a8778a205339bf1e6415d4148dd941e0441e"
             },
             "require": {
                 "php": "^7.3.0",
@@ -11881,7 +11881,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "c03612a44f420229a6039fe3ee713b3e61d2ea7f"
+                "reference": "1fabafe21b35110c689b2ff747b452d06cc68295"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -11983,7 +11983,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Gamer",
-                "reference": "beaafb876cd1ca562e6514f660a08d4542bcf7bc"
+                "reference": "dcdf376f2a7acff8a0e4a484eb322c8a7c90c82c"
             },
             "require": {
                 "sierratecnologia/audit": "dev-master",
@@ -12022,7 +12022,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Informate",
-                "reference": "3a0a13acd1354ddb57145a76c03e69f7e0513897"
+                "reference": "d32402b9c69dc3a2a4228d4664c9ee0941cf5c0b"
             },
             "require": {
                 "php": ">=7.2.0",
@@ -12067,7 +12067,7 @@
             "dist": {
                 "type": "path",
                 "url": "../LaravelSupport",
-                "reference": "6bcf1bcc9c9b62e2a531d4fb1589f24c0308176b"
+                "reference": "23bf284aa50d50ef1f44dc0dc578a9e4fe8315b2"
             },
             "require": {
                 "barryvdh/laravel-debugbar": "*",
@@ -12173,7 +12173,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Population",
-                "reference": "ac1af2fbb523f4c53d1a2a918d11840f5bd6b391"
+                "reference": "b0972e58e3567341824b477ff4398e2eb2df1fe5"
             },
             "require": {
                 "sierratecnologia/informate": "dev-master"
@@ -12210,7 +12210,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "541cd5ee74270bafc931511db3cc617a41ec785d"
+                "reference": "012e5106db6dcb7a558785b793bcaa1e34b41efa"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
