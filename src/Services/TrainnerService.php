@@ -18,7 +18,7 @@ class TrainnerService
     public function __construct($config = false)
     {
         if (!$this->config = $config) {
-            $this->config = config('facilitador.sitec.models');
+            $this->config = config('sitec.sitec.models');
         }
     }
 
