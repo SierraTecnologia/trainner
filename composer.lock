@@ -11634,7 +11634,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "bda8bdb539aefe3bd52083493937a2c5071b6310"
+                "reference": "1a77787f79f3dad53403f3a32a969dfa7d430731"
             },
             "require": {
                 "kassner/log-parser": "*",
@@ -11685,7 +11685,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "3d138f5c8b7d42e5c7fae1ae5e9adf7be35d1a94"
+                "reference": "c145241193eaa0ecf66aba8558d20abec36a3ae8"
             },
             "require": {
                 "php": "^7.3.0",
@@ -11882,7 +11882,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "83c232ef8114621afc34752ef396ccd3f712d60d"
+                "reference": "591a27cb9d60dbb3d21fa5026046499b4537ed4d"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -11984,7 +11984,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Gamer",
-                "reference": "367e2d93bcf55ad9b4b1d87089115723bed2c5c1"
+                "reference": "05e426b8eb8802259150f06ada23f72016cbff0c"
             },
             "require": {
                 "sierratecnologia/audit": "dev-master",
@@ -12211,7 +12211,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "98048d8e8cb86e53e75cbff62925dd3f4d466e7e"
+                "reference": "e695d91d6fc4d7fd898ca8f291e6f4cc1297cb13"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
