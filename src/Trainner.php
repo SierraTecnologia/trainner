@@ -1,6 +1,6 @@
 <?php
 /**
- * Fazer @todo
+ * Fazer @todo - classe repetida
  */
 
 namespace Trainner;
