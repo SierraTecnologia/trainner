@@ -106,26 +106,26 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.130.3",
+            "version": "3.131.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "916356edb5c30fa564d02de94bde51a9c0bb4469"
+                "reference": "371ca02855c92c13e36fa5f6d38e68211354c979"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/916356edb5c30fa564d02de94bde51a9c0bb4469",
-                "reference": "916356edb5c30fa564d02de94bde51a9c0bb4469",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/371ca02855c92c13e36fa5f6d38e68211354c979",
+                "reference": "371ca02855c92c13e36fa5f6d38e68211354c979",
                 "shasum": ""
             },
             "require": {
                 "ext-json": "*",
                 "ext-pcre": "*",
                 "ext-simplexml": "*",
-                "guzzlehttp/guzzle": "^5.3.3|^6.2.1",
-                "guzzlehttp/promises": "~1.0",
+                "guzzlehttp/guzzle": "^5.3.3|^6.2.1|^7.0",
+                "guzzlehttp/promises": "^1.0",
                 "guzzlehttp/psr7": "^1.4.1",
-                "mtdowling/jmespath.php": "~2.2",
+                "mtdowling/jmespath.php": "^2.5",
                 "php": ">=5.5"
             },
             "require-dev": {
@@ -186,7 +186,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-01-02T19:13:50+00:00"
+            "time": "2020-01-06T19:10:20+00:00"
         },
         {
             "name": "barryvdh/laravel-debugbar",
@@ -4692,31 +4692,32 @@
         },
         {
             "name": "kassner/log-parser",
-            "version": "1.5.0",
+            "version": "2.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/kassner/log-parser.git",
-                "reference": "ea846b7edf24a421c5484902b2501c9c8e065796"
+                "reference": "3e9264faaba5985c01e44d01aca5c55370440f2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kassner/log-parser/zipball/ea846b7edf24a421c5484902b2501c9c8e065796",
-                "reference": "ea846b7edf24a421c5484902b2501c9c8e065796",
+                "url": "https://api.github.com/repos/kassner/log-parser/zipball/3e9264faaba5985c01e44d01aca5c55370440f2b",
+                "reference": "3e9264faaba5985c01e44d01aca5c55370440f2b",
                 "shasum": ""
             },
             "require": {
-                "php": ">=5.3.4"
+                "php": ">=7.2.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^2.11",
-                "phpmd/phpmd": "~2.1",
-                "phpunit/phpunit": "~4.4",
-                "sebastian/phpcpd": "~2.0"
+                "friendsofphp/php-cs-fixer": "^2.16",
+                "phpmd/phpmd": "^2.8",
+                "phpunit/phpunit": "~8.0",
+                "sebastian/phpcpd": "^4.1",
+                "vimeo/psalm": "^3.7"
             },
             "type": "library",
             "autoload": {
-                "psr-0": {
-                    "Kassner": "src"
+                "psr-4": {
+                    "Kassner\\LogParser\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -4741,7 +4742,7 @@
                 "nginx",
                 "parser"
             ],
-            "time": "2019-02-04T07:43:30+00:00"
+            "time": "2020-01-05T20:41:04+00:00"
         },
         {
             "name": "larapack/hooks",
@@ -9535,20 +9536,19 @@
         },
         {
             "name": "phpstan/phpstan",
-            "version": "0.12.3",
+            "version": "0.12.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "c15a6ea55da71d8133399306f560cfe4d30301b7"
+                "reference": "100a25ba8561223f6bf5a5ff4204f951c0ec007c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/c15a6ea55da71d8133399306f560cfe4d30301b7",
-                "reference": "c15a6ea55da71d8133399306f560cfe4d30301b7",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/100a25ba8561223f6bf5a5ff4204f951c0ec007c",
+                "reference": "100a25ba8561223f6bf5a5ff4204f951c0ec007c",
                 "shasum": ""
             },
             "require": {
-                "nikic/php-parser": "^4.3.0",
                 "php": "^7.1"
             },
             "bin": [
@@ -9571,7 +9571,7 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
-            "time": "2019-12-14T13:41:17+00:00"
+            "time": "2020-01-06T06:38:17+00:00"
         },
         {
             "name": "phpunit/php-code-coverage",
@@ -12017,7 +12017,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "0ca700b95246666b35ac931961791d4d91139fdf"
+                "reference": "58c55a39ac764918e2e70f071b2d6220309010ca"
             },
             "require": {
                 "kassner/log-parser": "*",
@@ -12068,7 +12068,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "5979dab420a5281e0102ca489f88b413f74a4634"
+                "reference": "4b0d8d6568181114e4748b7609f3d91e8806c644"
             },
             "require": {
                 "php": "^7.3.0",
@@ -12265,7 +12265,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "aa1472da5d1ed306f5ee4501043dfe1437dac64d"
+                "reference": "ccaa72b103e82b0cfc4c212f1d646713f4c06ff6"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -12367,7 +12367,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Gamer",
-                "reference": "2d5cc35d78d9d27c5d209a6e66473e39c3b31d7a"
+                "reference": "d63101a0b95b3fdbf576b8fe52602a4fc46cfa32"
             },
             "require": {
                 "sierratecnologia/audit": "dev-master",
@@ -12451,7 +12451,7 @@
             "dist": {
                 "type": "path",
                 "url": "../LaravelSupport",
-                "reference": "a0e2bd7b004df6eeaecee00d982cd8eca66f2337"
+                "reference": "308ec1db057bed7c04c8b65556da44d5555cadcd"
             },
             "require": {
                 "barryvdh/laravel-debugbar": "*",
@@ -12558,7 +12558,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Population",
-                "reference": "2a03650c3a322d79a03ff0a479a4b07a7b85110f"
+                "reference": "a76241d2a90159b4ee775668874804d53a8cf7e1"
             },
             "require": {
                 "sierratecnologia/informate": "dev-master",
@@ -12596,7 +12596,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "92992ef3468889432675daa919ad130a881192e3"
+                "reference": "e32d938b10f8cf6655169f722393cf72dd838ea8"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
