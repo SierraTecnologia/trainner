@@ -17,7 +17,6 @@ use Illuminate\Routing\Router;
 use Support\ClassesHelpers\Traits\Models\ConsoleTools;
 
 use Trainner\Facades\Trainner as TrainnerFacade;
-use Illuminate\Contracts\Events\Dispatcher;
 use JeroenNoten\LaravelAdminLte\Events\BuildingMenu;
 
 class TrainnerProvider extends ServiceProvider
@@ -39,20 +38,32 @@ class TrainnerProvider extends ServiceProvider
     ];
 
     /**
+     * Rotas do Menu
+     */
+    public static $menuItens = [
+        'Profile' => [
+            [
+                'text' => 'Trainner',
+                'icon' => 'fas fa-fw fa-gavel',
+            ],
+            'Trainner' => [
+                [
+                    'text'        => 'Treinos',
+                    'route'       => 'trainner.home', //route('trainner.home'),
+                    'icon'        => 'fas fa-fw fa-gavel',
+                    'icon_color'  => 'blue',
+                    'label_color' => 'success',
+                    // 'access' => \App\Models\Role::$ADMIN
+                ]
+            ],
+        ],
+    ];
+
+    /**
      * Alias the services in the boot.
      */
-    public function boot(Dispatcher $events)
+    public function boot()
     {
-        
-        $events->listen(BuildingMenu::class, function (BuildingMenu $event) {
-            $event->menu->add('Trainner');
-            $event->menu->add([
-                'text'    => 'Trainner',
-                'icon'    => 'cog',
-                'nivel' => \App\Models\Role::$GOOD,
-                'submenu' => \Trainner\Services\MenuService::getAdminMenu(),
-            ]);
-        });
         
         // Register configs, migrations, etc
         $this->registerDirectories();
