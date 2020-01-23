@@ -58,16 +58,16 @@
         },
         {
             "name": "aschmelyun/larametrics",
-            "version": "v1.2",
+            "version": "v1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aschmelyun/larametrics.git",
-                "reference": "b7d48c59aa527aeb3ea80309b5120f44b66467c2"
+                "reference": "b7966907f30436dccc7270db997a49663b454b86"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aschmelyun/larametrics/zipball/b7d48c59aa527aeb3ea80309b5120f44b66467c2",
-                "reference": "b7d48c59aa527aeb3ea80309b5120f44b66467c2",
+                "url": "https://api.github.com/repos/aschmelyun/larametrics/zipball/b7966907f30436dccc7270db997a49663b454b86",
+                "reference": "b7966907f30436dccc7270db997a49663b454b86",
                 "shasum": ""
             },
             "require": {
@@ -104,20 +104,20 @@
                 }
             ],
             "description": "A self-hosted metrics and notifications platform for Laravel apps",
-            "time": "2020-01-12T04:21:20+00:00"
+            "time": "2020-01-23T18:30:37+00:00"
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.133.4",
+            "version": "3.133.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "6ecd907672784cca89584c7553fa38589c1efcb6"
+                "reference": "99ea2386f68ba29acd8e91c515e0fc19b2845378"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/6ecd907672784cca89584c7553fa38589c1efcb6",
-                "reference": "6ecd907672784cca89584c7553fa38589c1efcb6",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/99ea2386f68ba29acd8e91c515e0fc19b2845378",
+                "reference": "99ea2386f68ba29acd8e91c515e0fc19b2845378",
                 "shasum": ""
             },
             "require": {
@@ -188,7 +188,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-01-21T19:14:39+00:00"
+            "time": "2020-01-23T19:15:25+00:00"
         },
         {
             "name": "barryvdh/laravel-debugbar",
@@ -12075,7 +12075,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "fa1c2b3aa64c6e4b0b079b5cfb4811fd10611f6c"
+                "reference": "168b207e2d62b191b526f0a2a2dfa6dca3a3b9ed"
             },
             "require": {
                 "php": "^7.3.0",
@@ -12272,7 +12272,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "65fedcb4eee8c8321920bf4f23c170d4bc805c48"
+                "reference": "6b2ea8229b40852231bb71625b5b738eb510f64f"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -12374,7 +12374,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Gamer",
-                "reference": "e7e1a779f775f2cad579b242a6fe026abb29eb92"
+                "reference": "f252bb126b8f55d21e35e778e867392233e8ae07"
             },
             "require": {
                 "sierratecnologia/audit": "dev-master",
@@ -12603,7 +12603,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "b2e4cc09fefaf0bf8f60c03d65095e84aa7fcb3f"
+                "reference": "7c151f974a7b6dff9f4beec485c12920675c684e"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
