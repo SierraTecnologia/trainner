@@ -3,7 +3,7 @@
 namespace Data\Treinamento\Tecnicas\Empreendedorismo;
 
 use Population\Models\Identity\Digital\Sitio;
-use Population\Models\Entytys\Digital\Midia\Video;
+use Finder\Models\Digital\Midia\Video;
 
  class FailFast extends Empreendedorismo
  {

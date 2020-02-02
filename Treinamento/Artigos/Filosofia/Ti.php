@@ -3,7 +3,7 @@
 namespace Data\Treinamento\Artigos\Filosofia;
 
 use Population\Models\Identity\Digital\Sitio;
-use Population\Models\Entytys\Digital\Midia\Video;
+use Finder\Models\Digital\Midia\Video;
 
  class Ti extends Filosofia
  {
