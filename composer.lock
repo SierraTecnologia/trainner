@@ -108,16 +108,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.133.8",
+            "version": "3.133.9",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "c564fcccd5fc7b5e8514d1cbe35558be1e3a11cd"
+                "reference": "59e059bd6d25d315a03cdad10b79102df5cb0a1b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/c564fcccd5fc7b5e8514d1cbe35558be1e3a11cd",
-                "reference": "c564fcccd5fc7b5e8514d1cbe35558be1e3a11cd",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/59e059bd6d25d315a03cdad10b79102df5cb0a1b",
+                "reference": "59e059bd6d25d315a03cdad10b79102df5cb0a1b",
                 "shasum": ""
             },
             "require": {
@@ -188,7 +188,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-02-05T19:12:47+00:00"
+            "time": "2020-02-06T19:11:31+00:00"
         },
         {
             "name": "barryvdh/laravel-debugbar",
@@ -2843,6 +2843,72 @@
                 "static"
             ],
             "time": "2020-01-08T19:53:19+00:00"
+        },
+        {
+            "name": "dompdf/dompdf",
+            "version": "v0.8.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dompdf/dompdf.git",
+                "reference": "8f49b3b01693f51037dd50da81090beba1b5c005"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dompdf/dompdf/zipball/8f49b3b01693f51037dd50da81090beba1b5c005",
+                "reference": "8f49b3b01693f51037dd50da81090beba1b5c005",
+                "shasum": ""
+            },
+            "require": {
+                "ext-dom": "*",
+                "ext-mbstring": "*",
+                "phenx/php-font-lib": "^0.5.1",
+                "phenx/php-svg-lib": "^0.3.3",
+                "php": "^7.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^7.5",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "suggest": {
+                "ext-gd": "Needed to process images",
+                "ext-gmagick": "Improves image processing performance",
+                "ext-imagick": "Improves image processing performance"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-develop": "0.7-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Dompdf\\": "src/"
+                },
+                "classmap": [
+                    "lib/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-2.1"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Ménager",
+                    "email": "fabien.menager@gmail.com"
+                },
+                {
+                    "name": "Brian Sweeney",
+                    "email": "eclecticgeek@gmail.com"
+                },
+                {
+                    "name": "Gabriel Bull",
+                    "email": "me@gabrielbull.com"
+                }
+            ],
+            "description": "DOMPDF is a CSS 2.1 compliant HTML to PDF converter",
+            "homepage": "https://github.com/dompdf/dompdf",
+            "time": "2020-01-20T17:00:46+00:00"
         },
         {
             "name": "dragonmantank/cron-expression",
@@ -7733,6 +7799,83 @@
             "time": "2018-07-08T19:19:57+00:00"
         },
         {
+            "name": "phenx/php-font-lib",
+            "version": "0.5.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhenX/php-font-lib.git",
+                "reference": "760148820110a1ae0936e5cc35851e25a938bc97"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhenX/php-font-lib/zipball/760148820110a1ae0936e5cc35851e25a938bc97",
+                "reference": "760148820110a1ae0936e5cc35851e25a938bc97",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FontLib\\": "src/FontLib"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Ménager",
+                    "email": "fabien.menager@gmail.com"
+                }
+            ],
+            "description": "A library to read, parse, export and make subsets of different types of font files.",
+            "homepage": "https://github.com/PhenX/php-font-lib",
+            "time": "2017-09-13T16:14:37+00:00"
+        },
+        {
+            "name": "phenx/php-svg-lib",
+            "version": "v0.3.3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/PhenX/php-svg-lib.git",
+                "reference": "5fa61b65e612ce1ae15f69b3d223cb14ecc60e32"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/PhenX/php-svg-lib/zipball/5fa61b65e612ce1ae15f69b3d223cb14ecc60e32",
+                "reference": "5fa61b65e612ce1ae15f69b3d223cb14ecc60e32",
+                "shasum": ""
+            },
+            "require": {
+                "sabberworm/php-css-parser": "^8.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^5.5|^6.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Svg\\": "src/Svg"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "LGPL-3.0"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Ménager",
+                    "email": "fabien.menager@gmail.com"
+                }
+            ],
+            "description": "A library to read, parse and export to PDF SVG files.",
+            "homepage": "https://github.com/PhenX/php-svg-lib",
+            "time": "2019-09-11T20:02:13+00:00"
+        },
+        {
             "name": "php-ai/php-ml",
             "version": "0.8.0",
             "source": {
@@ -11058,6 +11201,51 @@
             "time": "2019-02-22T18:04:02+00:00"
         },
         {
+            "name": "sabberworm/php-css-parser",
+            "version": "8.3.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/sabberworm/PHP-CSS-Parser.git",
+                "reference": "91bcc3e3fdb7386c9a2e0e0aa09ca75cc43f121f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/sabberworm/PHP-CSS-Parser/zipball/91bcc3e3fdb7386c9a2e0e0aa09ca75cc43f121f",
+                "reference": "91bcc3e3fdb7386c9a2e0e0aa09ca75cc43f121f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "codacy/coverage": "^1.4",
+                "phpunit/phpunit": "~4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Sabberworm\\CSS": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Raphael Schweikert"
+                }
+            ],
+            "description": "Parser for CSS Files written in PHP",
+            "homepage": "http://www.sabberworm.com/blog/2010/6/10/php-css-parser",
+            "keywords": [
+                "css",
+                "parser",
+                "stylesheet"
+            ],
+            "time": "2019-02-22T07:42:52+00:00"
+        },
+        {
             "name": "sabre/uri",
             "version": "2.2.0",
             "source": {
@@ -12075,7 +12263,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "f3bc036cb38c5f365bf5d723826e8cf34c125c10"
+                "reference": "50810407a3e2c9e7ff7858a89910922a3d49c0df"
             },
             "require": {
                 "kassner/log-parser": "*",
@@ -12126,12 +12314,13 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "e0770a8d1c6ae34f33e58189741f5ba8dbc7fd0c"
+                "reference": "8424432bf7aeb77f0f29db17225153d1e22a75e3"
             },
             "require": {
                 "overtrue/laravel-follow": "^1.1",
                 "php": "^7.3.0",
-                "sierratecnologia/finder": "dev-master"
+                "sierratecnologia/finder": "dev-master",
+                "sierratecnologia/payment-laravel": "dev-master"
             },
             "bin": [
                 "bin/casa-sincronizador"
@@ -12324,7 +12513,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "d154bd1a4649096f3453a8b54a313cf308b8dd31"
+                "reference": "ff82082e051087a7ef063fb17e5cb51f12fa4439"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -12426,7 +12615,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Gamer",
-                "reference": "a047ea41b2ee36dc3afb469ade692eeabc31c2f7"
+                "reference": "545d2f9d781d6ec9d6a6ed31022f3107e48af240"
             },
             "require": {
                 "sierratecnologia/audit": "dev-master",
@@ -12465,7 +12654,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Informate",
-                "reference": "f465ffa610e904486323e3a6859353a15ef96ced"
+                "reference": "31fd34b2ce7a15695bc80760ac493bf20bf68ffa"
             },
             "require": {
                 "php": ">=7.2.0",
@@ -12612,12 +12801,147 @@
             }
         },
         {
+            "name": "sierratecnologia/payment-laravel",
+            "version": "dev-master",
+            "dist": {
+                "type": "path",
+                "url": "../payment-laravel",
+                "reference": "d2e6e05c226351d7c0dff7a545e31efbc9772197"
+            },
+            "require": {
+                "dompdf/dompdf": "^0.8.0",
+                "ext-json": "*",
+                "illuminate/contracts": "~5.8.0|~5.9.0",
+                "illuminate/database": "~5.8.0|~5.9.0",
+                "illuminate/http": "~5.8.0|~5.9.0",
+                "illuminate/routing": "~5.8.0|~5.9.0",
+                "illuminate/support": "~5.8.0|~5.9.0",
+                "illuminate/view": "~5.8.0|~5.9.0",
+                "nesbot/carbon": "^1.26.3|^2.0",
+                "php": "^7.1.3",
+                "sierratecnologia/payment-php": "dev-master",
+                "symfony/http-kernel": "^4.2"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.0",
+                "orchestra/testbench": "^3.8",
+                "phpunit/phpunit": "^7.5"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "10.0-dev"
+                },
+                "laravel": {
+                    "providers": [
+                        "SierraTecnologia\\Cashier\\CashierServiceProvider"
+                    ],
+                    "dont-discover": [
+                        "laravel/cashier"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SierraTecnologia\\Cashier\\": "src/"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "SierraTecnologia\\Cashier\\Tests\\": "tests/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ricardo Sierra",
+                    "email": "contato@sierratecnologia.com.br"
+                }
+            ],
+            "description": "Sierratecnologia Cashier provides an expressive, fluent interface to SierraTecnologia's subscription billing services.",
+            "keywords": [
+                "billing",
+                "laravel",
+                "sierratecnologia"
+            ],
+            "support": {
+                "issues": "https://github.com/sierratecnologia/cashier/issues",
+                "source": "https://github.com/sierratecnologia/cashier"
+            },
+            "transport-options": {
+                "symlink": true
+            }
+        },
+        {
+            "name": "sierratecnologia/payment-php",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SierraTecnologia/payment-php.git",
+                "reference": "2755661ee0cbf11f3f1c9b09dbc1aaa654fd33b0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SierraTecnologia/payment-php/zipball/2755661ee0cbf11f3f1c9b09dbc1aaa654fd33b0",
+                "reference": "2755661ee0cbf11f3f1c9b09dbc1aaa654fd33b0",
+                "shasum": ""
+            },
+            "require": {
+                "ext-curl": "*",
+                "ext-json": "*",
+                "ext-mbstring": "*",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "php-coveralls/php-coveralls": "1.*",
+                "phpunit/phpunit": "~4.0",
+                "squizlabs/php_codesniffer": "~2.0",
+                "symfony/process": "~2.8"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "dont-discover": [
+                        "laravel/cashier"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "SierraTecnologia\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Sierra Tecnologia",
+                    "email": "contato@sierratecnologia.com.br",
+                    "homepage": "https://sierratecnologia.com.br",
+                    "role": "Organizer"
+                }
+            ],
+            "homepage": "https://sierratecnologia.com.br",
+            "keywords": [
+                "SierraTecnologia",
+                "api",
+                "payment processing",
+                "sdk",
+                "sitec"
+            ],
+            "time": "2019-08-28T09:34:16+00:00"
+        },
+        {
             "name": "sierratecnologia/population",
             "version": "dev-master",
             "dist": {
                 "type": "path",
                 "url": "../Population",
-                "reference": "d8e345b3f107a592608cd2f4d5d30e356765b8b4"
+                "reference": "3d0a1767ed98aaaea692d6c06505540f7ad936e1"
             },
             "require": {
                 "sierratecnologia/informate": "dev-master",
@@ -12655,7 +12979,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "2e57e6b27fa87f250444372cc91eef1a96c17d8d"
+                "reference": "8b0a535c5e93c6016ae4caaafc1994b8b70649cf"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
