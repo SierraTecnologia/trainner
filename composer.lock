@@ -6054,16 +6054,16 @@
         },
         {
             "name": "m4tthumphrey/php-gitlab-api",
-            "version": "9.16.0",
+            "version": "9.17.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/m4tthumphrey/php-gitlab-api.git",
-                "reference": "b6684dcc85e465f2e39be2ccea2e708994a32a95"
+                "reference": "a4c3d1638fc35a76cc276f53773d6c74820c0f29"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/m4tthumphrey/php-gitlab-api/zipball/b6684dcc85e465f2e39be2ccea2e708994a32a95",
-                "reference": "b6684dcc85e465f2e39be2ccea2e708994a32a95",
+                "url": "https://api.github.com/repos/m4tthumphrey/php-gitlab-api/zipball/a4c3d1638fc35a76cc276f53773d6c74820c0f29",
+                "reference": "a4c3d1638fc35a76cc276f53773d6c74820c0f29",
                 "shasum": ""
             },
             "require": {
@@ -6085,7 +6085,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "9.15-dev"
+                    "dev-master": "9.16-dev"
                 }
             },
             "autoload": {
@@ -6118,7 +6118,7 @@
                 "api",
                 "gitlab"
             ],
-            "time": "2020-01-02T13:40:11+00:00"
+            "time": "2020-02-17T09:36:49+00:00"
         },
         {
             "name": "maatwebsite/excel",
@@ -12320,7 +12320,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "e3b0f7201483a97a50e54ad4d92a9a3d2369b18b"
+                "reference": "98c60256e226743830e46889efde664247a24833"
             },
             "require": {
                 "kassner/log-parser": "*",
@@ -12371,7 +12371,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "d9fbeaa0c417a48a8fbb7efc95a0adf6a4b97cec"
+                "reference": "08cb3080dfb40349c79a862b244ca1456edebe19"
             },
             "require": {
                 "overtrue/laravel-follow": "^1.1",
@@ -12570,7 +12570,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "53b61bfc170e5cbe29a70dfb2c92fbd0632f3e99"
+                "reference": "06463642429b465d48b5000b19084776f39f548b"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -12672,7 +12672,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Gamer",
-                "reference": "c6685ef52f83d052f8ff0e3c51bc4d2b1406b9a9"
+                "reference": "5bae8240a6f4dae5029a9096ee65f39e62129148"
             },
             "require": {
                 "sierratecnologia/audit": "dev-master",
@@ -12756,7 +12756,7 @@
             "dist": {
                 "type": "path",
                 "url": "../LaravelSupport",
-                "reference": "ebbf88f51e2e6b88e32721c44ff6539c815f446a"
+                "reference": "cd93fcf093cc8e0d18fc052169208e970d120bf1"
             },
             "require": {
                 "barryvdh/laravel-debugbar": "*",
@@ -12784,6 +12784,7 @@
                 "spatie/laravel-schemaless-attributes": "^1.6.0",
                 "spatie/laravel-sluggable": "^2.2",
                 "spatie/laravel-translatable": "^4.2",
+                "symfony/inflector": "^5.0",
                 "venturecraft/revisionable": "^1.30",
                 "watson/validating": "^3.3.0"
             },
@@ -12998,7 +12999,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Population",
-                "reference": "8c959185e07a7f904e71b9c4056cfb167baadf8f"
+                "reference": "c210b33ce3a2aebf3abe3a1941c040a5cb929d71"
             },
             "require": {
                 "sierratecnologia/informate": "dev-master",
@@ -13036,7 +13037,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "dc7cd8525574166e5976a8f525dd2a8db47acaa6"
+                "reference": "73a315cade93ed9ec7811b60fa04ad5bce1e319d"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
@@ -15069,6 +15070,64 @@
             "description": "Symfony HttpKernel Component",
             "homepage": "https://symfony.com",
             "time": "2020-01-31T12:45:06+00:00"
+        },
+        {
+            "name": "symfony/inflector",
+            "version": "v5.0.4",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/inflector.git",
+                "reference": "e375603b6bd12e8e3aec3fc1b640ac18a4ef4cb2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/inflector/zipball/e375603b6bd12e8e3aec3fc1b640ac18a4ef4cb2",
+                "reference": "e375603b6bd12e8e3aec3fc1b640ac18a4ef4cb2",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^7.2.5",
+                "symfony/polyfill-ctype": "~1.8"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "5.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Symfony\\Component\\Inflector\\": ""
+                },
+                "exclude-from-classmap": [
+                    "/Tests/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bernhard Schussek",
+                    "email": "bschussek@gmail.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "https://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Inflector Component",
+            "homepage": "https://symfony.com",
+            "keywords": [
+                "inflection",
+                "pluralize",
+                "singularize",
+                "string",
+                "symfony",
+                "words"
+            ],
+            "time": "2020-01-04T14:08:26+00:00"
         },
         {
             "name": "symfony/mime",
