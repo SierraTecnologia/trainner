@@ -12320,7 +12320,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "321ccd9cca24b0ced9f474864942e5c0f65e4d56"
+                "reference": "e3b0f7201483a97a50e54ad4d92a9a3d2369b18b"
             },
             "require": {
                 "kassner/log-parser": "*",
@@ -12371,7 +12371,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "6291920a8ba09c6f488d5139aaf2a429daf23227"
+                "reference": "d9fbeaa0c417a48a8fbb7efc95a0adf6a4b97cec"
             },
             "require": {
                 "overtrue/laravel-follow": "^1.1",
@@ -12509,10 +12509,16 @@
         {
             "name": "sierratecnologia/crypto",
             "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SierraTecnologia/Crypto.git",
+                "reference": "03b7e9da28c8a915c7f42e047f584703498f8007"
+            },
             "dist": {
-                "type": "path",
-                "url": "../Crypto",
-                "reference": "b34c91aedab2273daaae78e438af2e11fe82ca1f"
+                "type": "zip",
+                "url": "https://api.github.com/repos/SierraTecnologia/Crypto/zipball/03b7e9da28c8a915c7f42e047f584703498f8007",
+                "reference": "03b7e9da28c8a915c7f42e047f584703498f8007",
+                "shasum": ""
             },
             "require": {
                 "illuminate/support": "5.*",
@@ -12541,6 +12547,7 @@
                     "src/Helpers/crypto.php"
                 ]
             },
+            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -12555,9 +12562,7 @@
                 }
             ],
             "description": "Cryptography tools for Laravel and Lumen",
-            "transport-options": {
-                "symlink": true
-            }
+            "time": "2020-02-17T08:28:11+00:00"
         },
         {
             "name": "sierratecnologia/finder",
@@ -12565,7 +12570,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "b990ab438209b7b0f0b63afdc5c517d6c15e9287"
+                "reference": "53b61bfc170e5cbe29a70dfb2c92fbd0632f3e99"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -12667,7 +12672,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Gamer",
-                "reference": "ae050a7e0a426e852082fcc09cd51f0df15e8a0b"
+                "reference": "c6685ef52f83d052f8ff0e3c51bc4d2b1406b9a9"
             },
             "require": {
                 "sierratecnologia/audit": "dev-master",
@@ -12706,7 +12711,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Informate",
-                "reference": "bf56ec9efe5c34c06aadb423893281b4539d3d4a"
+                "reference": "e8ad894380d72fad8ddce2ef29458bd1380d127c"
             },
             "require": {
                 "php": ">=7.2.0",
@@ -12993,7 +12998,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Population",
-                "reference": "0fef09c91492f3cbaeb900ffef14288b9e2d1926"
+                "reference": "8c959185e07a7f904e71b9c4056cfb167baadf8f"
             },
             "require": {
                 "sierratecnologia/informate": "dev-master",
@@ -13031,7 +13036,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "2a5d00b5339530f4f2d1cba0fe51ed75397ca660"
+                "reference": "dc7cd8525574166e5976a8f525dd2a8db47acaa6"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
