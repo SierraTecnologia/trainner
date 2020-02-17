@@ -3561,16 +3561,16 @@
         },
         {
             "name": "google/apiclient-services",
-            "version": "v0.126",
+            "version": "v0.127",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client-services.git",
-                "reference": "d296c140b9157b7f4fdf7bae125bf9ce16eeeabd"
+                "reference": "19eacad739807e522891bf3f911ffab4a4c29869"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/d296c140b9157b7f4fdf7bae125bf9ce16eeeabd",
-                "reference": "d296c140b9157b7f4fdf7bae125bf9ce16eeeabd",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client-services/zipball/19eacad739807e522891bf3f911ffab4a4c29869",
+                "reference": "19eacad739807e522891bf3f911ffab4a4c29869",
                 "shasum": ""
             },
             "require": {
@@ -3594,7 +3594,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2020-02-10T00:24:16+00:00"
+            "time": "2020-02-17T00:24:19+00:00"
         },
         {
             "name": "google/auth",
@@ -12320,7 +12320,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "ef25d52bb2982391acb7784624dc013a283fff5e"
+                "reference": "74361043a3226e6189763958d718e7bd4a94bdb3"
             },
             "require": {
                 "kassner/log-parser": "*",
@@ -12371,7 +12371,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "efb86f612cf738a6b517046e69a63ed57f81a09e"
+                "reference": "835d7e377acaa27dd19baffa70482fed39262519"
             },
             "require": {
                 "overtrue/laravel-follow": "^1.1",
@@ -12509,16 +12509,10 @@
         {
             "name": "sierratecnologia/crypto",
             "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/SierraTecnologia/Crypto.git",
-                "reference": "89e36a9a4ddfee9e2fa3f0b771cce797a1dc2615"
-            },
             "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/SierraTecnologia/Crypto/zipball/89e36a9a4ddfee9e2fa3f0b771cce797a1dc2615",
-                "reference": "89e36a9a4ddfee9e2fa3f0b771cce797a1dc2615",
-                "shasum": ""
+                "type": "path",
+                "url": "../Crypto",
+                "reference": "b34c91aedab2273daaae78e438af2e11fe82ca1f"
             },
             "require": {
                 "illuminate/support": "5.*",
@@ -12547,7 +12541,6 @@
                     "src/Helpers/crypto.php"
                 ]
             },
-            "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
@@ -12562,7 +12555,9 @@
                 }
             ],
             "description": "Cryptography tools for Laravel and Lumen",
-            "time": "2019-06-12T03:25:24+00:00"
+            "transport-options": {
+                "symlink": true
+            }
         },
         {
             "name": "sierratecnologia/finder",
@@ -12570,7 +12565,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "19ded9b8ea1e4446d25013c6b2069969fd6180a1"
+                "reference": "bdd754b6d4b0b730af8ea21c750ac7bd29a94cbd"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -12672,7 +12667,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Gamer",
-                "reference": "9ca54b9cb592752056ca95b1c5414525203261d6"
+                "reference": "98b1e843bc2b034082cb1f659427e65a3fe9fac3"
             },
             "require": {
                 "sierratecnologia/audit": "dev-master",
@@ -12711,7 +12706,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Informate",
-                "reference": "7bc526890c4795715f4ece948cb5755a6fd286f7"
+                "reference": "4573c4d61add4ba02467b10fb29d8134d6ae5683"
             },
             "require": {
                 "php": ">=7.2.0",
@@ -12756,7 +12751,7 @@
             "dist": {
                 "type": "path",
                 "url": "../LaravelSupport",
-                "reference": "6629e6cbd9e47daea8a2e6ab674e035da65f5662"
+                "reference": "ebbf88f51e2e6b88e32721c44ff6539c815f446a"
             },
             "require": {
                 "barryvdh/laravel-debugbar": "*",
@@ -12998,7 +12993,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Population",
-                "reference": "0cc87e57de940fc2d782f7960706faef05a6162f"
+                "reference": "44c804dfdd8d6444bfb0a026ed8ec1f6f1f178de"
             },
             "require": {
                 "sierratecnologia/informate": "dev-master",
@@ -13036,7 +13031,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "1ade41372c9ae3c2e268bf694b4b3fc7bf068ecf"
+                "reference": "35b3018818f3f913ffcaae18e00284d448b53292"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
