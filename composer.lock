@@ -8518,23 +8518,20 @@
         },
         {
             "name": "phpdocumentor/reflection-common",
-            "version": "2.0.0",
+            "version": "2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpDocumentor/ReflectionCommon.git",
-                "reference": "63a995caa1ca9e5590304cd845c15ad6d482a62a"
+                "reference": "6568f4687e5b41b054365f9ae03fcb1ed5f2069b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/63a995caa1ca9e5590304cd845c15ad6d482a62a",
-                "reference": "63a995caa1ca9e5590304cd845c15ad6d482a62a",
+                "url": "https://api.github.com/repos/phpDocumentor/ReflectionCommon/zipball/6568f4687e5b41b054365f9ae03fcb1ed5f2069b",
+                "reference": "6568f4687e5b41b054365f9ae03fcb1ed5f2069b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=7.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~6"
             },
             "type": "library",
             "extra": {
@@ -8566,7 +8563,7 @@
                 "reflection",
                 "static analysis"
             ],
-            "time": "2018-08-07T13:53:10+00:00"
+            "time": "2020-04-27T09:25:28+00:00"
         },
         {
             "name": "phpdocumentor/reflection-docblock",
@@ -9113,16 +9110,16 @@
         },
         {
             "name": "phpoffice/phpspreadsheet",
-            "version": "1.11.0",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPOffice/PhpSpreadsheet.git",
-                "reference": "c2a205e82f9cf1cc9fab86b79e808d86dd680470"
+                "reference": "f79611d6dc1f6b7e8e30b738fc371b392001dbfd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/c2a205e82f9cf1cc9fab86b79e808d86dd680470",
-                "reference": "c2a205e82f9cf1cc9fab86b79e808d86dd680470",
+                "url": "https://api.github.com/repos/PHPOffice/PhpSpreadsheet/zipball/f79611d6dc1f6b7e8e30b738fc371b392001dbfd",
+                "reference": "f79611d6dc1f6b7e8e30b738fc371b392001dbfd",
                 "shasum": ""
             },
             "require": {
@@ -9202,7 +9199,7 @@
                 "xls",
                 "xlsx"
             ],
-            "time": "2020-03-02T13:09:03+00:00"
+            "time": "2020-04-27T08:12:48+00:00"
         },
         {
             "name": "phpoffice/phpword",
@@ -10878,16 +10875,16 @@
         },
         {
             "name": "rap2hpoutre/laravel-log-viewer",
-            "version": "v1.5.2",
+            "version": "v1.6.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rap2hpoutre/laravel-log-viewer.git",
-                "reference": "337bb72d2af6b0de9b3128e77f13c1ff262bc962"
+                "reference": "02023f590b84d11be8716a8c07146c128f9e7b42"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rap2hpoutre/laravel-log-viewer/zipball/337bb72d2af6b0de9b3128e77f13c1ff262bc962",
-                "reference": "337bb72d2af6b0de9b3128e77f13c1ff262bc962",
+                "url": "https://api.github.com/repos/rap2hpoutre/laravel-log-viewer/zipball/02023f590b84d11be8716a8c07146c128f9e7b42",
+                "reference": "02023f590b84d11be8716a8c07146c128f9e7b42",
                 "shasum": ""
             },
             "require": {
@@ -10933,7 +10930,7 @@
                 "logging",
                 "lumen"
             ],
-            "time": "2020-04-23T19:44:47+00:00"
+            "time": "2020-04-27T06:40:08+00:00"
         },
         {
             "name": "ricardosierra/changelog",
@@ -11053,7 +11050,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Translation",
-                "reference": "ed53238b4004778c871af2da46fd96933e67ec1d"
+                "reference": "48928399e4355295b7723de10363b516e5aa2a56"
             },
             "archive": {
                 "exclude": [
@@ -11384,16 +11381,16 @@
         },
         {
             "name": "sebastian/code-unit",
-            "version": "1.0.0",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/code-unit.git",
-                "reference": "8d8f09bd47c75159921e6e84fdef146343962866"
+                "reference": "00d2094a93573796ec6666401be467fa6efcd86a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/code-unit/zipball/8d8f09bd47c75159921e6e84fdef146343962866",
-                "reference": "8d8f09bd47c75159921e6e84fdef146343962866",
+                "url": "https://api.github.com/repos/sebastianbergmann/code-unit/zipball/00d2094a93573796ec6666401be467fa6efcd86a",
+                "reference": "00d2094a93573796ec6666401be467fa6efcd86a",
                 "shasum": ""
             },
             "require": {
@@ -11426,7 +11423,7 @@
             ],
             "description": "Collection of value objects that represent the PHP code units",
             "homepage": "https://github.com/sebastianbergmann/code-unit",
-            "time": "2020-03-30T11:59:20+00:00"
+            "time": "2020-04-27T06:25:01+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -12338,7 +12335,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "794b97f22d11764684a67d1f6ee7640f3899a7d7"
+                "reference": "4f1963a505222d3f499db5526fecc3e1be6bcdc2"
             },
             "require": {
                 "kassner/log-parser": "*",
@@ -12389,7 +12386,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "a54f60b7b995805ac20300376b9d926fbd9e91d6"
+                "reference": "925b7f9e85b1700881e88a7f959d32f8f15f095c"
             },
             "require": {
                 "overtrue/laravel-follow": "^1.1",
@@ -12530,12 +12527,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/SierraTecnologia/Crypto.git",
-                "reference": "03b7e9da28c8a915c7f42e047f584703498f8007"
+                "reference": "4c6d517d059b8094c3f2d8bb7129fd52ab149fc9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/SierraTecnologia/Crypto/zipball/03b7e9da28c8a915c7f42e047f584703498f8007",
-                "reference": "03b7e9da28c8a915c7f42e047f584703498f8007",
+                "url": "https://api.github.com/repos/SierraTecnologia/Crypto/zipball/4c6d517d059b8094c3f2d8bb7129fd52ab149fc9",
+                "reference": "4c6d517d059b8094c3f2d8bb7129fd52ab149fc9",
                 "shasum": ""
             },
             "require": {
@@ -12580,7 +12577,7 @@
                 }
             ],
             "description": "Cryptography tools for Laravel and Lumen",
-            "time": "2020-02-17T08:28:11+00:00"
+            "time": "2020-04-12T07:56:31+00:00"
         },
         {
             "name": "sierratecnologia/finder",
@@ -12588,7 +12585,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "bf32ce612441ec6b0537e90309807fcf1b9594d5"
+                "reference": "888dea4419faa1ad38caff17ff57837223ea9f74"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -12690,7 +12687,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Gamer",
-                "reference": "54c5165ec401205b9a3614dd60be38d599440aae"
+                "reference": "bd26d68504b261ab57524cb67ecdbf11a04760da"
             },
             "require": {
                 "sierratecnologia/audit": "dev-master",
@@ -12729,7 +12726,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Informate",
-                "reference": "bfb55fae60138029cddc6a767cbc17a22cae0059"
+                "reference": "857dc8c04b8e08adf5bcb5b56b3bceea1e650277"
             },
             "require": {
                 "php": ">=7.2.0",
@@ -12774,7 +12771,7 @@
             "dist": {
                 "type": "path",
                 "url": "../LaravelSupport",
-                "reference": "32936bd72926c24831e7a3567e8c3253ba3bfd60"
+                "reference": "a1fa28aed36626470c005d53c7991221ca0fd5c2"
             },
             "require": {
                 "barryvdh/laravel-debugbar": "*",
@@ -13017,7 +13014,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Population",
-                "reference": "17522ad210a9e2de3f091d60c08e82e7832ac1a6"
+                "reference": "33097d6f169dd9ce79f65e8ae7330c1f6fab20c2"
             },
             "require": {
                 "sierratecnologia/informate": "dev-master",
@@ -13055,7 +13052,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "5f7119ebb33983ecc51e86f89fee8a52e3e38ec9"
+                "reference": "2f2a859adfe1837d811a6c5e28463b18e172436d"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
