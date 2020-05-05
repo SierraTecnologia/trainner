@@ -14,7 +14,7 @@ use Config;
 use Route;
 use Illuminate\Routing\Router;
 
-use Support\Helpers\Traits\Models\ConsoleTools;
+use Support\Traits\Providers\ConsoleTools;
 
 use Trainner\Facades\Trainner as TrainnerFacade;
 use JeroenNoten\LaravelAdminLte\Events\BuildingMenu;
