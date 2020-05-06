@@ -109,16 +109,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.137.2",
+            "version": "3.137.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "af91c2fc467a326e5bcb5665e4e2ad3d84d28be2"
+                "reference": "0bed146e6336ca1260e937fce2f4931681ceb3ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/af91c2fc467a326e5bcb5665e4e2ad3d84d28be2",
-                "reference": "af91c2fc467a326e5bcb5665e4e2ad3d84d28be2",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0bed146e6336ca1260e937fce2f4931681ceb3ce",
+                "reference": "0bed146e6336ca1260e937fce2f4931681ceb3ce",
                 "shasum": ""
             },
             "require": {
@@ -189,7 +189,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-05-04T18:13:52+00:00"
+            "time": "2020-05-06T18:19:09+00:00"
         },
         {
             "name": "beberlei/assert",
@@ -764,16 +764,16 @@
         },
         {
             "name": "composer/composer",
-            "version": "1.10.5",
+            "version": "1.10.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/composer.git",
-                "reference": "7a4d5b6aa30d2118af27c04f5e897b57156ccfa9"
+                "reference": "be81b9c4735362c26876bdbfd3b5bc7e7f711c88"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/composer/zipball/7a4d5b6aa30d2118af27c04f5e897b57156ccfa9",
-                "reference": "7a4d5b6aa30d2118af27c04f5e897b57156ccfa9",
+                "url": "https://api.github.com/repos/composer/composer/zipball/be81b9c4735362c26876bdbfd3b5bc7e7f711c88",
+                "reference": "be81b9c4735362c26876bdbfd3b5bc7e7f711c88",
                 "shasum": ""
             },
             "require": {
@@ -792,7 +792,8 @@
                 "symfony/process": "^2.7 || ^3.0 || ^4.0 || ^5.0"
             },
             "conflict": {
-                "symfony/console": "2.8.38"
+                "symfony/console": "2.8.38",
+                "symfony/phpunit-bridge": "3.4.40"
             },
             "require-dev": {
                 "phpspec/prophecy": "^1.10",
@@ -840,7 +841,7 @@
                 "dependency",
                 "package"
             ],
-            "time": "2020-04-10T09:44:22+00:00"
+            "time": "2020-05-06T08:28:10+00:00"
         },
         {
             "name": "composer/semver",
@@ -6517,16 +6518,16 @@
         },
         {
             "name": "maxmind/web-service-common",
-            "version": "v0.6.0",
+            "version": "v0.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/maxmind/web-service-common-php.git",
-                "reference": "40c928bb0194c45088b369a17f9baef9c3fc7460"
+                "reference": "74c996c218ada5c639c8c2f076756e059f5552fc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/maxmind/web-service-common-php/zipball/40c928bb0194c45088b369a17f9baef9c3fc7460",
-                "reference": "40c928bb0194c45088b369a17f9baef9c3fc7460",
+                "url": "https://api.github.com/repos/maxmind/web-service-common-php/zipball/74c996c218ada5c639c8c2f076756e059f5552fc",
+                "reference": "74c996c218ada5c639c8c2f076756e059f5552fc",
                 "shasum": ""
             },
             "require": {
@@ -6559,7 +6560,7 @@
             ],
             "description": "Internal MaxMind Web Service API",
             "homepage": "https://github.com/maxmind/web-service-common-php",
-            "time": "2019-12-12T15:56:05+00:00"
+            "time": "2020-05-06T14:07:26+00:00"
         },
         {
             "name": "mobiledetect/mobiledetectlib",
@@ -9859,16 +9860,16 @@
         },
         {
             "name": "phpunit/php-token-stream",
-            "version": "4.0.0",
+            "version": "4.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/php-token-stream.git",
-                "reference": "b2560a0c33f7710e4d7f8780964193e8e8f8effe"
+                "reference": "cdc0db5aed8fbfaf475fbd95bfd7bab83c7a779c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/b2560a0c33f7710e4d7f8780964193e8e8f8effe",
-                "reference": "b2560a0c33f7710e4d7f8780964193e8e8f8effe",
+                "url": "https://api.github.com/repos/sebastianbergmann/php-token-stream/zipball/cdc0db5aed8fbfaf475fbd95bfd7bab83c7a779c",
+                "reference": "cdc0db5aed8fbfaf475fbd95bfd7bab83c7a779c",
                 "shasum": ""
             },
             "require": {
@@ -9904,7 +9905,7 @@
             "keywords": [
                 "tokenizer"
             ],
-            "time": "2020-02-07T06:19:00+00:00"
+            "time": "2020-05-06T09:56:31+00:00"
         },
         {
             "name": "phpunit/phpunit",
@@ -12206,7 +12207,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "257372eeeaae78a1d36a53a4173a9c91131f9164"
+                "reference": "1cf7b66312847754bb73d7ce8e1848231639ef1b"
             },
             "require": {
                 "kassner/log-parser": "*",
@@ -12257,7 +12258,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "02f50f5adccd05d96b8b8d2ce451c9f1e49a93bf"
+                "reference": "2f2267569c56dd404a211883dfe222a9ea2d45f2"
             },
             "require": {
                 "overtrue/laravel-follow": "^1.1",
@@ -12456,7 +12457,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "3b80cfe663d08f16f76ba3cdf5feb1ba44a116ad"
+                "reference": "c3236d75c49a111d2aa74107286f0a5f49acd984"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -12558,7 +12559,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Gamer",
-                "reference": "3a86212106169e711f46d14ab429c51921dff285"
+                "reference": "19e18d049c2cb3905e97c6d591bc9a070eb8eeea"
             },
             "require": {
                 "sierratecnologia/audit": "dev-master",
@@ -12597,7 +12598,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Informate",
-                "reference": "79c914736550a4e2ec2d86cb137a91bf0bd2f17c"
+                "reference": "bc09acce7a07fc849e106c483ab81c2dfa14ca18"
             },
             "require": {
                 "php": ">=7.2.0",
@@ -12642,7 +12643,7 @@
             "dist": {
                 "type": "path",
                 "url": "../LaravelSupport",
-                "reference": "9760361d88ba107aa2637d91720520f3544a3ee1"
+                "reference": "8b0356740cf3ad795e27dd1864ac8b97b98ad3cc"
             },
             "require": {
                 "cviebrock/eloquent-sluggable": "~4.0",
@@ -12882,7 +12883,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Population",
-                "reference": "b319bce9426b70e5c695c014b69bba628139cf54"
+                "reference": "79c5557d8a959cb495e0c2316d5410ce009a8c11"
             },
             "require": {
                 "sierratecnologia/informate": "dev-master",
@@ -12920,7 +12921,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "3a5f776bc4ccc1fdb29b6f565f8c9fc885f7b6a9"
+                "reference": "8823294fd535957f67bbaa88e15d03ace267cfe9"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
@@ -13040,16 +13041,16 @@
         },
         {
             "name": "spatie/crawler",
-            "version": "4.7.1",
+            "version": "4.7.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spatie/crawler.git",
-                "reference": "3ec6b08ede3215d29ba8f5f2ed1df0fba5e2ea17"
+                "reference": "ed7301f6865c2064854cd429a75fcc31f4a5042d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spatie/crawler/zipball/3ec6b08ede3215d29ba8f5f2ed1df0fba5e2ea17",
-                "reference": "3ec6b08ede3215d29ba8f5f2ed1df0fba5e2ea17",
+                "url": "https://api.github.com/repos/spatie/crawler/zipball/ed7301f6865c2064854cd429a75fcc31f4a5042d",
+                "reference": "ed7301f6865c2064854cd429a75fcc31f4a5042d",
                 "shasum": ""
             },
             "require": {
@@ -13095,7 +13096,7 @@
                 "spatie",
                 "website"
             ],
-            "time": "2020-04-14T14:38:37+00:00"
+            "time": "2020-05-06T11:35:29+00:00"
         },
         {
             "name": "spatie/eloquent-sortable",
