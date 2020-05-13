@@ -129,7 +129,7 @@ class TrainnerProvider extends ServiceProvider
         $this->app->singleton(TrainnerService::class, function($app)
         {
             Log::info('Singleton Trainner');
-            return new TrainnerService(config('sitec.trainner'));
+            return new TrainnerService(\Illuminate\Support\Facades\Config::get('sitec.trainner'));
         });
 
         // Register commands
