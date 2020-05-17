@@ -14,16 +14,18 @@ class CreateTrainnerAlunosTables extends Migration
      */
     public function up()
     {
-        Schema::create('trainners', function (Blueprint $table) {
-            $table->string('code')->unique();                                                                                                                                                                      
-            $table->primary('code'); 
-            $table->string('code_top');
-            $table->string('code_bot');
+        Schema::create(
+            'trainners', function (Blueprint $table) {
+                $table->string('code')->unique();                                                                                                                                                                      
+                $table->primary('code'); 
+                $table->string('code_top');
+                $table->string('code_bot');
 
-            $table->date('init_at')->nullable();
+                $table->date('init_at')->nullable();
 
-            $table->timestamps();
-        });
+                $table->timestamps();
+            }
+        );
     }
     /**
      * Reverse the migrations.

@@ -88,11 +88,13 @@ class TrainnerProvider extends ServiceProvider
         /**
          * Trainner Routes
          */
-        Route::group([
+        Route::group(
+            [
             'namespace' => '\Trainner\Http\Controllers',
-        ], function ($router) {
-            require __DIR__.'/Routes/web.php';
-        });
+            ], function ($router) {
+                include __DIR__.'/Routes/web.php';
+            }
+        );
     }
 
     /**
@@ -114,9 +116,11 @@ class TrainnerProvider extends ServiceProvider
         $loader = AliasLoader::getInstance();
         $loader->alias('Trainner', TrainnerFacade::class);
 
-        $this->app->singleton('trainner', function () {
-            return new Trainner();
-        });
+        $this->app->singleton(
+            'trainner', function () {
+                return new Trainner();
+            }
+        );
         
         /*
         |--------------------------------------------------------------------------
@@ -126,16 +130,19 @@ class TrainnerProvider extends ServiceProvider
         /**
          * Singleton Trainner
          */
-        $this->app->singleton(TrainnerService::class, function($app)
-        {
-            Log::info('Singleton Trainner');
-            return new TrainnerService(\Illuminate\Support\Facades\Config::get('sitec.trainner'));
-        });
+        $this->app->singleton(
+            TrainnerService::class, function ($app) {
+                Log::info('Singleton Trainner');
+                return new TrainnerService(\Illuminate\Support\Facades\Config::get('sitec.trainner'));
+            }
+        );
 
         // Register commands
-        $this->registerCommandFolders([
+        $this->registerCommandFolders(
+            [
             base_path('vendor/sierratecnologia/trainner/src/Console/Commands') => '\Trainner\Console\Commands',
-        ]);
+            ]
+        );
     }
 
     /**
@@ -158,10 +165,12 @@ class TrainnerProvider extends ServiceProvider
     public function registerDirectories()
     {
         // Publish config files
-        $this->publishes([
+        $this->publishes(
+            [
             // Paths
             $this->getPublishesPath('config/sitec') => config_path('sitec'),
-        ], ['config',  'sitec', 'sitec-config']);
+            ], ['config',  'sitec', 'sitec-config']
+        );
 
         // // Publish trainner css and js to public directory
         // $this->publishes([
@@ -178,18 +187,22 @@ class TrainnerProvider extends ServiceProvider
         // View namespace
         $viewsPath = $this->getResourcesPath('views');
         $this->loadViewsFrom($viewsPath, 'trainner');
-        $this->publishes([
+        $this->publishes(
+            [
             $viewsPath => base_path('resources/views/vendor/trainner'),
-        ], ['views',  'sitec', 'sitec-views']);
+            ], ['views',  'sitec', 'sitec-views']
+        );
 
     }
     
     private function loadTranslations()
     {
         // Publish lanaguage files
-        $this->publishes([
+        $this->publishes(
+            [
             $this->getResourcesPath('lang') => resource_path('lang/vendor/trainner')
-        ], ['lang',  'sitec', 'sitec-lang', 'translations']);
+            ], ['lang',  'sitec', 'sitec-lang', 'translations']
+        );
 
         // Load translations
         $this->loadTranslationsFrom($this->getResourcesPath('lang'), 'trainner');

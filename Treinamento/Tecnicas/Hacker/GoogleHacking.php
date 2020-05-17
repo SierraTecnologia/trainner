@@ -5,15 +5,15 @@ namespace Data\Treinamento\Tecnicas\Hacker;
 use Population\Models\Identity\Digital\Sitio;
 use Finder\Models\Digital\Midia\Video;
 
- class GoogleHacking extends Hacker
- {
+class GoogleHacking extends Hacker
+{
 
-   public $name = 'Google Hacking';
-   public $code = 'google-hacking';
+    public $name = 'Google Hacking';
+    public $code = 'google-hacking';
     
     public function run()
     {
         
     }   
 
- }
+}
