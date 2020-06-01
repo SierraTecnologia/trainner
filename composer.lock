@@ -151,16 +151,16 @@
         },
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.138.10",
+            "version": "3.139.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "cf197a033ad75cd9e3a90a207cf5ec8935aafa48"
+                "reference": "0d8ccd70c76e22f04ec16bff07b7e002dd594c82"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/cf197a033ad75cd9e3a90a207cf5ec8935aafa48",
-                "reference": "cf197a033ad75cd9e3a90a207cf5ec8935aafa48",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0d8ccd70c76e22f04ec16bff07b7e002dd594c82",
+                "reference": "0d8ccd70c76e22f04ec16bff07b7e002dd594c82",
                 "shasum": ""
             },
             "require": {
@@ -231,7 +231,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-05-28T18:12:07+00:00"
+            "time": "2020-06-01T18:11:54+00:00"
         },
         {
             "name": "beberlei/assert",
@@ -3638,22 +3638,22 @@
         },
         {
             "name": "google/apiclient",
-            "version": "v2.4.1",
+            "version": "v2.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/googleapis/google-api-php-client.git",
-                "reference": "1fdfe942f9aaf3064e621834a5e3047fccb3a6da"
+                "reference": "9ab9cc07f66e2c7274ea2753f102ae24d1271410"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/googleapis/google-api-php-client/zipball/1fdfe942f9aaf3064e621834a5e3047fccb3a6da",
-                "reference": "1fdfe942f9aaf3064e621834a5e3047fccb3a6da",
+                "url": "https://api.github.com/repos/googleapis/google-api-php-client/zipball/9ab9cc07f66e2c7274ea2753f102ae24d1271410",
+                "reference": "9ab9cc07f66e2c7274ea2753f102ae24d1271410",
                 "shasum": ""
             },
             "require": {
                 "firebase/php-jwt": "~2.0||~3.0||~4.0||~5.0",
                 "google/apiclient-services": "~0.13",
-                "google/auth": "^1.0",
+                "google/auth": "^1.9",
                 "guzzlehttp/guzzle": "~5.3.1||~6.0",
                 "guzzlehttp/psr7": "^1.2",
                 "monolog/monolog": "^1.17|^2.0",
@@ -3695,7 +3695,7 @@
             "keywords": [
                 "google"
             ],
-            "time": "2020-03-26T15:30:32+00:00"
+            "time": "2020-05-26T22:29:38+00:00"
         },
         {
             "name": "google/apiclient-services",
@@ -11636,6 +11636,72 @@
             "time": "2019-06-27T09:34:05+00:00"
         },
         {
+            "name": "ricardosierra/phpwhois",
+            "version": "dev-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ricardosierra/phpWhois.git",
+                "reference": "d09e88d6f0c6730149048c043205d3f0eee62cf9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ricardosierra/phpWhois/zipball/d09e88d6f0c6730149048c043205d3f0eee62cf9",
+                "reference": "d09e88d6f0c6730149048c043205d3f0eee62cf9",
+                "shasum": ""
+            },
+            "require": {
+                "ext-mbstring": "*",
+                "php": ">=7.0.0",
+                "true/punycode": "~2.0"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.0"
+            },
+            "suggest": {
+                "lib-openssl": "*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "phpWhois\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Mark Jeftovic",
+                    "email": "markjr@easydns.com"
+                },
+                {
+                    "name": "David Saez Padros",
+                    "email": "david@ols.es"
+                },
+                {
+                    "name": "Ross Golder",
+                    "email": "ross@golder.org"
+                },
+                {
+                    "name": "Dmitry Lukashin",
+                    "email": "dmitry@lukashin.ru"
+                },
+                {
+                    "name": "Ricardo Sierra",
+                    "email": "ricardo@sierratecnologia.com.br"
+                }
+            ],
+            "description": "phpWhois - library for querying whois services and parsing results. Based on phpwhois.org",
+            "homepage": "http://phpwhois.pw",
+            "keywords": [
+                "php",
+                "phpwhois",
+                "whois"
+            ],
+            "time": "2019-05-01T07:14:34+00:00"
+        },
+        {
             "name": "ricardosierra/translation",
             "version": "dev-master",
             "dist": {
@@ -12927,7 +12993,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Audit",
-                "reference": "b2486ab5c9709300c356dd516997aa4c410e91a1"
+                "reference": "8326a42e086a3cb9e11986a11f6d0d059bdbda3a"
             },
             "require": {
                 "kassner/log-parser": "*",
@@ -12978,7 +13044,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Casa",
-                "reference": "90b747b6f0ac41d9c43f7b66a35f122023c3d95c"
+                "reference": "881022f9d0c5419d77d61e759f1861f4f8fe9fed"
             },
             "require": {
                 "overtrue/laravel-follow": "^1.1",
@@ -13236,7 +13302,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Finder",
-                "reference": "0febd8d39190954e10de68baee0c3a9385fde2ec"
+                "reference": "53e1e35ba081a4b05b976bf997149e25aeaa17f6"
             },
             "require": {
                 "aws/aws-sdk-php": "*",
@@ -13462,7 +13528,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Gamer",
-                "reference": "6bd39ada457c9703d1aeaa778bdad50cc9bf21e5"
+                "reference": "54c0c942a4b9b3ce6c74053745ef8ec364536f77"
             },
             "require": {
                 "sierratecnologia/audit": "dev-master",
@@ -13546,7 +13612,7 @@
             "dist": {
                 "type": "path",
                 "url": "../LaravelSupport",
-                "reference": "5f613fd829d9b6277c8ca4c63a13788b60560616"
+                "reference": "738c7ac8b9a7ded5a2befe66ab96983f0798d1a1"
             },
             "require": {
                 "anahkiasen/html-object": "^1.4",
@@ -13582,6 +13648,7 @@
                 "ramsey/uuid": "^3.8",
                 "ricardosierra/changelog": "~1.4",
                 "ricardosierra/minify": "1.0.*",
+                "ricardosierra/phpwhois": "dev-dev",
                 "ricardosierra/translation": "dev-master",
                 "ricardosierra/validate": "^0.2",
                 "sierratecnologia/crudmaker": "dev-master",
@@ -13616,13 +13683,12 @@
                 "files": [
                     "utils/funcs/load-laravel.php",
                     "utils/funcs/helpers.php",
-                    "src/Helpers/form_maker.php",
-                    "src/Helpers/helpers.php",
-                    "src/Helpers/helpersi18n.php",
-                    "src/Helpers/helperSlugify.php",
-                    "src/Helpers/helperTranslations.php",
-                    "src/Helpers/input_maker.php",
-                    "src/Helpers/Reflection.php"
+                    "utils/funcs/form_maker.php",
+                    "utils/funcs/helpersi18n.php",
+                    "utils/funcs/helperSlugify.php",
+                    "utils/funcs/helperTranslations.php",
+                    "utils/funcs/input_maker.php",
+                    "utils/funcs/Reflection.php"
                 ]
             },
             "autoload-dev": {
@@ -13815,7 +13881,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Population",
-                "reference": "1db34c388572b26891dc399b84a60014073687a7"
+                "reference": "73330001a4c84e8629ef9f5087d173671bad6832"
             },
             "require": {
                 "sierratecnologia/informate": "dev-master",
@@ -13853,7 +13919,7 @@
             "dist": {
                 "type": "path",
                 "url": "../Tracking",
-                "reference": "a88583daf563e2981d3b6d5484887e78475ff5e9"
+                "reference": "cf8baec318cd4c86a7f82d272b002ba5c7fb9fb5"
             },
             "require": {
                 "aschmelyun/larametrics": "^1.1",
@@ -17913,6 +17979,52 @@
                 "maxmind"
             ],
             "time": "2020-02-12T19:59:27+00:00"
+        },
+        {
+            "name": "true/punycode",
+            "version": "v2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/true/php-punycode.git",
+                "reference": "a4d0c11a36dd7f4e7cd7096076cab6d3378a071e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/true/php-punycode/zipball/a4d0c11a36dd7f4e7cd7096076cab6d3378a071e",
+                "reference": "a4d0c11a36dd7f4e7cd7096076cab6d3378a071e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "symfony/polyfill-mbstring": "^1.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.7",
+                "squizlabs/php_codesniffer": "~2.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "TrueBV\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Renan Gonçalves",
+                    "email": "renan.saddam@gmail.com"
+                }
+            ],
+            "description": "A Bootstring encoding of Unicode for Internationalized Domain Names in Applications (IDNA)",
+            "homepage": "https://github.com/true/php-punycode",
+            "keywords": [
+                "idna",
+                "punycode"
+            ],
+            "time": "2016-11-16T10:37:54+00:00"
         },
         {
             "name": "ua-parser/uap-php",

@@ -9,7 +9,7 @@
         }
     ],
     "require": {
-        "php": "^7.3.0",
+        "php": ">=7.0",
         "sierratecnologia/finder": "dev-master",
         "sierratecnologia/gamer": "dev-master",
         "sierratecnologia/casa": "dev-master"
