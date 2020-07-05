@@ -32,7 +32,7 @@ use Facilitador\Models\Role;
 use Facilitador\Models\Setting;
 use Facilitador\Models\Translation;
 use App\Models\User;
-use Facilitador\Traits\Translatable;
+use RicardoSierra\Translation\Traits\HasTranslations;
 use View;
 use Config;
 use Request;
@@ -76,7 +76,7 @@ class Trainner
         'Post'        => Post::class,
         'Role'        => Role::class,
         'Setting'     => Setting::class,
-        'User'        => \Illuminate\Support\Facades\Config::get('sitec.core.models.user', \App\Models\User::class),
+        'User'        => \App\Models\User::class,
         'Translation' => Translation::class,
     ];
 
