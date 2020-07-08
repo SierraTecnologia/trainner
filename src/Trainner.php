@@ -32,7 +32,7 @@ use Facilitador\Models\Role;
 use Facilitador\Models\Setting;
 use Facilitador\Models\Translation;
 use App\Models\User;
-use RicardoSierra\Translation\Traits\HasTranslations;
+use Translation\Traits\HasTranslations;
 use View;
 use Config;
 use Request;
