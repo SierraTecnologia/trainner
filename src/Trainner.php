@@ -20,7 +20,7 @@ use Support\Template\Actions\ViewAction;
 use Support\Events\AlertsCollection;
 use Support\Elements\FormFields\After\HandlerInterface as AfterHandlerInterface;
 use Support\Elements\FormFields\HandlerInterface;
-use Facilitador\Models\Category;
+use Siravel\Models\Blog\Category;
 use Support\Models\DataRow;
 use Support\Models\DataType;
 use Facilitador\Models\Menu;
