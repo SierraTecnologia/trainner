@@ -3,7 +3,7 @@
 namespace Data\Treinamento\Tecnicas\Hacker;
 
 use Population\Models\Identity\Digital\Sitio;
-use Finder\Models\Digital\Midia\Video;
+use Artista\Models\Video;
 
 class GoogleHacking extends Hacker
 {
