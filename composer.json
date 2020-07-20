@@ -1,11 +1,24 @@
 {
     "name": "sierratecnologia/trainner",
     "description": "trainner",
+    "type": "library",
+    "keywords": [
+        "sierratecnologia",
+        "transmissor"
+    ],
     "license": "MIT",
+    "homepage": "https://sierratecnologia.com/packages/transmissor/",
+    "support": {
+        "email": "help@sierratecnologia.com",
+        "issues": "https://github.com/sierratecnologia/transmissor/issues",
+        "source": "https://github.com/sierratecnologia/transmissor",
+        "docs": "https://github.com/sierratecnologia/transmissor/blob/master/README.md"
+    },
     "authors": [
         {
-            "name": "Ricardo Rebello Sierra",
-            "email": "contato@ricardosierra.com.br"
+            "name": "SierraTecnologia",
+            "homepage": "https://sierratecnologia.com.br",
+            "email": "help@sierratecnologia.com.br"
         }
     ],
     "require": {
