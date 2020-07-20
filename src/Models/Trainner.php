@@ -3,7 +3,7 @@
 namespace Trainner\Models;
 
 use Support\Models\Base;
-use Population\Traits\HasServicesAndAccounts;
+use Telefonica\Traits\HasServicesAndAccounts;
 
 class Trainner extends Base
 {

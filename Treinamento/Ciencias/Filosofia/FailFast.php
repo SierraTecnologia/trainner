@@ -2,7 +2,7 @@
 
 namespace Data\Treinamento\Ciencias\Filosofia;
 
-use Population\Models\Identity\Digital\Sitio;
+use Telefonica\Models\Digital\Sitio;
 use Stalker\Models\Video;
 
 class FailFast extends Filosofia

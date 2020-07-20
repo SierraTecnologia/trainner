@@ -2,7 +2,7 @@
 
 namespace Data\Treinamento\Artigos\Empreendedorismo;
 
-use Population\Models\Identity\Digital\Sitio;
+use Telefonica\Models\Digital\Sitio;
 use Stalker\Models\Video;
 
 class FailFast extends Empreendedorismo
