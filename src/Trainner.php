@@ -27,7 +27,7 @@ use Facilitador\Models\Menu;
 use Facilitador\Models\MenuItem;
 use Siravel\Models\Negocios\Page;
 use Facilitador\Models\Permission;
-use Facilitador\Models\Post;
+use Siravel\Models\Blog\Post;
 use Facilitador\Models\Role;
 use Facilitador\Models\Setting;
 use Facilitador\Models\Translation;
