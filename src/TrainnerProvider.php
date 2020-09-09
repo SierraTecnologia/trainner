@@ -2,26 +2,29 @@
 
 namespace Trainner;
 
-use Illuminate\Foundation\AliasLoader;
-use Illuminate\Support\ServiceProvider;
-use Trainner\Services\TrainnerService;
-use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\View;
-
-use Log;
 use App;
 use Config;
-use Route;
+use Illuminate\Foundation\AliasLoader;
 use Illuminate\Routing\Router;
+use Illuminate\Support\Collection;
 
+use Illuminate\Support\Facades\View;
+use Illuminate\Support\ServiceProvider;
+use JeroenNoten\LaravelAdminLte\Events\BuildingMenu;
+use Log;
 use Muleta\Traits\Providers\ConsoleTools;
 
+use Route;
+
 use Trainner\Facades\Trainner as TrainnerFacade;
-use JeroenNoten\LaravelAdminLte\Events\BuildingMenu;
+use Trainner\Services\TrainnerService;
 
 class TrainnerProvider extends ServiceProvider
 {
     use ConsoleTools;
+
+    public $packageName = 'trainner';
+    const pathVendor = 'sierratecnologia/trainner';
 
     public static $aliasProviders = [
         'Trainner' => \Trainner\Facades\Trainner::class,
@@ -42,20 +45,21 @@ class TrainnerProvider extends ServiceProvider
      */
     public static $menuItens = [
         'Painel' => [
-            [
-                'text' => 'Trainner',
-                'icon' => 'fas fa-fw fa-gavel',
-            ],
-            'Trainner' => [
+            // [
+            //     'text' => 'Trainner',
+            //     'icon' => 'fas fa-fw fa-gavel',
+            // ],
+            // 'Trainner' => [
                 [
                     'text'        => 'Treinos',
                     'route'       => 'trainner.home', //route('trainner.home'),
                     'icon'        => 'fas fa-fw fa-gavel',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
+                    'section' => "painel",
                     // 'access' => \App\Models\Role::$ADMIN
                 ]
-            ],
+            // ],
         ],
     ];
 
@@ -85,16 +89,11 @@ class TrainnerProvider extends ServiceProvider
             return;
         }
 
+
         /**
-         * Trainner Routes
+         * Transmissor; Routes
          */
-        Route::group(
-            [
-            'namespace' => '\Trainner\Http\Controllers',
-            ], function ($router) {
-                include __DIR__.'/Routes/web.php';
-            }
-        );
+        $this->loadRoutesForRiCa(__DIR__.'/../routes');
     }
 
     /**
@@ -117,7 +116,8 @@ class TrainnerProvider extends ServiceProvider
         $loader->alias('Trainner', TrainnerFacade::class);
 
         $this->app->singleton(
-            'trainner', function () {
+            'trainner',
+            function () {
                 return new Trainner();
             }
         );
@@ -131,7 +131,8 @@ class TrainnerProvider extends ServiceProvider
          * Singleton Trainner
          */
         $this->app->singleton(
-            TrainnerService::class, function ($app) {
+            TrainnerService::class,
+            function ($app) {
                 Log::info('Singleton Trainner');
                 return new TrainnerService(\Illuminate\Support\Facades\Config::get('sitec.trainner'));
             }
@@ -169,7 +170,8 @@ class TrainnerProvider extends ServiceProvider
             [
             // Paths
             $this->getPublishesPath('config/sitec') => config_path('sitec'),
-            ], ['config',  'sitec', 'sitec-config']
+            ],
+            ['config',  'sitec', 'sitec-config']
         );
 
         // // Publish trainner css and js to public directory
@@ -179,7 +181,6 @@ class TrainnerProvider extends ServiceProvider
 
         $this->loadViews();
         $this->loadTranslations();
-
     }
 
     private function loadViews()
@@ -190,9 +191,9 @@ class TrainnerProvider extends ServiceProvider
         $this->publishes(
             [
             $viewsPath => base_path('resources/views/vendor/trainner'),
-            ], ['views',  'sitec', 'sitec-views']
+            ],
+            ['views',  'sitec', 'sitec-views']
         );
-
     }
     
     private function loadTranslations()
@@ -201,12 +202,11 @@ class TrainnerProvider extends ServiceProvider
         $this->publishes(
             [
             $this->getResourcesPath('lang') => resource_path('lang/vendor/trainner')
-            ], ['lang',  'sitec', 'sitec-lang', 'translations']
+            ],
+            ['lang',  'sitec', 'sitec-lang', 'translations']
         );
 
         // Load translations
         $this->loadTranslationsFrom($this->getResourcesPath('lang'), 'trainner');
     }
-
-
 }
