@@ -59,7 +59,7 @@ class TrainnerProvider extends ServiceProvider
                     'section' => "painel",
                     // 'access' => \App\Models\Role::$ADMIN
                 ]
-            // ],
+                // ],
         ],
     ];
 
