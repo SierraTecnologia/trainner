@@ -2,7 +2,7 @@
 
 namespace Trainner\Models;
 
-use Support\Models\Base;
+use Pedreiro\Models\Base;
 use Telefonica\Traits\HasServicesAndAccounts;
 
 class Trainner extends Base
