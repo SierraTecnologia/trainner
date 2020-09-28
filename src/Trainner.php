@@ -30,7 +30,7 @@ use Siravel\Models\Blog\Post;
 use Siravel\Models\Negocios\Page;
 use Pedreiro\Elements\FormFields\After\HandlerInterface as AfterHandlerInterface;
 use Pedreiro\Elements\FormFields\HandlerInterface;
-use Support\Events\AlertsCollection;
+use Pedreiro\Events\AlertsCollection;
 use Support\Models\DataRow;
 use Support\Models\DataType;
 use Pedreiro\Template\Actions\DeleteAction;
