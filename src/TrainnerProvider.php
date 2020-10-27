@@ -93,7 +93,7 @@ class TrainnerProvider extends ServiceProvider
         /**
          * Transmissor; Routes
          */
-        $this->loadRoutesForRiCa(__DIR__.'/../routes');
+        $this->loadRoutesForRiCa(__DIR__.DIRECTORY_SEPARATOR.'..'.DIRECTORY_SEPARATOR.'routes');
     }
 
     /**
@@ -169,7 +169,7 @@ class TrainnerProvider extends ServiceProvider
         $this->publishes(
             [
             // Paths
-            $this->getPublishesPath('config/sitec') => config_path('sitec'),
+            $this->getPublishesPath('config'.DIRECTORY_SEPARATOR.'sitec') => config_path('sitec'),
             ],
             ['config',  'sitec', 'sitec-config']
         );
@@ -190,7 +190,7 @@ class TrainnerProvider extends ServiceProvider
         $this->loadViewsFrom($viewsPath, 'trainner');
         $this->publishes(
             [
-            $viewsPath => base_path('resources/views/vendor/trainner'),
+            $viewsPath => base_path('resources'.DIRECTORY_SEPARATOR.'views'.DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'trainner'),
             ],
             ['views',  'sitec', 'sitec-views']
         );
@@ -201,7 +201,7 @@ class TrainnerProvider extends ServiceProvider
         // Publish lanaguage files
         $this->publishes(
             [
-            $this->getResourcesPath('lang') => resource_path('lang/vendor/trainner')
+            $this->getResourcesPath('lang') => resource_path('lang'.DIRECTORY_SEPARATOR.'vendor'.DIRECTORY_SEPARATOR.'trainner')
             ],
             ['lang',  'sitec', 'sitec-lang', 'translations']
         );
