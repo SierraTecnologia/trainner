@@ -57,7 +57,7 @@ class TrainnerProvider extends ServiceProvider
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
                     'section' => "painel",
-                    // 'access' => \App\Models\Role::$ADMIN
+                    // 'access' => \Porteiro\Models\Role::$ADMIN
                 ]
                 // ],
         ],
