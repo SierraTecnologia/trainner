@@ -44,7 +44,7 @@ class TrainnerProvider extends ServiceProvider
      * Rotas do Menu
      */
     public static $menuItens = [
-        'Painel' => [
+        // 'Painel' => [
             // [
             //     'text' => 'Trainner',
             //     'icon' => 'fas fa-fw fa-gavel',
@@ -60,7 +60,7 @@ class TrainnerProvider extends ServiceProvider
                     // 'access' => \Porteiro\Models\Role::$ADMIN
                 ]
                 // ],
-        ],
+        // ],
     ];
 
     /**
