@@ -8796,7 +8796,7 @@
                 "reference": "e314e9d12b31ffe4729ef0aadfa2892c55e65463"
             },
             "require": {
-                "php": "^7.4"
+                "php": "^7.2|^8.0"
             },
             "type": "library",
             "extra": {
@@ -10037,7 +10037,7 @@
                 "fzaninotto/faker": ">=1.8",
                 "guzzlehttp/guzzle": "^6.3|^7.0",
                 "nesbot/carbon": ">=2.0|1.*",
-                "php": "^7.4"
+                "php": "^7.2|^8.0"
             },
             "require-dev": {
                 "ext-intl": "*",
@@ -10459,7 +10459,7 @@
             "require": {
                 "kassner/log-parser": "^2.0",
                 "laravel/telescope": "^3.0 || ^4.0",
-                "php": "^7.4",
+                "php": "^7.2|^8.0",
                 "rap2hpoutre/laravel-log-viewer": "^1.5",
                 "sierratecnologia/muleta": "dev-master",
                 "sierratecnologia/pedreiro": "dev-master",
@@ -10529,7 +10529,7 @@
                 "reference": "710659f5792aebc646353239f5d54ac038c17904"
             },
             "require": {
-                "php": "^7.4",
+                "php": "^7.2|^8.0",
                 "sierratecnologia/crypto": "dev-master",
                 "sierratecnologia/muleta": "dev-master",
                 "sierratecnologia/payment-laravel": "dev-master"
@@ -10612,7 +10612,7 @@
                 "reference": "b402d83633b11dccd999bb9a06670a611433cc59"
             },
             "require": {
-                "php": "^7.4",
+                "php": "^7.2|^8.0",
                 "sierratecnologia/bancario": "dev-master",
                 "sierratecnologia/integrations": "dev-master",
                 "sierratecnologia/payment-laravel": "dev-master",
@@ -10819,7 +10819,7 @@
                 "gitonomy/gitlib": "^1.2",
                 "guzzlehttp/guzzle": "^6.0 || ^7.0",
                 "lorisleiva/laravel-actions": "^1.1",
-                "php": "^7.4",
+                "php": "^7.2|^8.0",
                 "sierratecnologia/integrations": "dev-master",
                 "sierratecnologia/muleta": "dev-master",
                 "sierratecnologia/operador": "dev-master"
@@ -10922,7 +10922,7 @@
                 "maatwebsite/excel": ">=3.1",
                 "markrogoyski/math-php": ">=1.0",
                 "nicmart/string-template": "v0.1.0",
-                "php": "^7.4",
+                "php": "^7.2|^8.0",
                 "php-ai/php-ml": ">=0.8",
                 "phpoffice/phppresentation": "*",
                 "phpoffice/phpspreadsheet": "*",
@@ -11019,7 +11019,7 @@
                 "illuminate/support": "^7.0 || ^8.0",
                 "illuminate/translation": "^7.0 || ^8.0",
                 "illuminate/view": "^7.0 || ^8.0",
-                "php": "^7.4"
+                "php": "^7.2|^8.0"
             },
             "replace": {
                 "anahkiasen/former": "*",
@@ -11273,7 +11273,7 @@
                 "league/pipeline": "*",
                 "league/plates": "^3.1|^4.0",
                 "m4tthumphrey/php-gitlab-api": "*",
-                "php": "^7.4",
+                "php": "^7.2|^8.0",
                 "raiym/instagram-php-scraper": ">=0.9.10",
                 "ricasolucoes/atlassian": "dev-master",
                 "sabre/xml": "*",
@@ -11344,7 +11344,7 @@
                 "illuminate/support": "^7.0 || ^8.0",
                 "jmikola/geojson": "^1.0",
                 "jordanbrauer/unit-converter": "^0.8.4",
-                "php": "^7.4",
+                "php": "^7.2|^8.0",
                 "ricardosierra/database": "^0.21",
                 "ricardosierra/translation": "dev-master",
                 "ricardosierra/validate": "dev-master",
@@ -11444,7 +11444,7 @@
                 "league/mime-type-detection": ">=1.1",
                 "league/pipeline": "*",
                 "nao-pon/flysystem-google-drive": "~1.1",
-                "php": "^7.4",
+                "php": "^7.2|^8.0",
                 "sierratecnologia/muleta": "dev-master",
                 "spatie/laravel-medialibrary": "^8.0",
                 "srmklive/flysystem-dropbox-v2": "*"
@@ -11514,7 +11514,7 @@
             },
             "require": {
                 "laravel/helpers": "^1.1",
-                "php": "^7.4",
+                "php": "^7.2|^8.0",
                 "ricardosierra/changelog": "~1.4",
                 "sierratecnologia/crypto": "dev-master"
             },
@@ -11596,7 +11596,7 @@
                 "reference": "19e235d497fd8788623219834a88fda76a40876b"
             },
             "require": {
-                "php": "^7.4",
+                "php": "^7.2|^8.0",
                 "privatejustice/tramite": "dev-master"
             },
             "type": "library",
@@ -11670,7 +11670,7 @@
                 "illuminate/support": "^7.0 || ^8.0",
                 "illuminate/view": "^7.0 || ^8.0",
                 "nesbot/carbon": ">=1.26",
-                "php": "^7.4",
+                "php": "^7.2|^8.0",
                 "sierratecnologia/payment-php": "dev-master",
                 "sierratecnologia/telefonica": "dev-master",
                 "symfony/http-kernel": ">=4.2"
@@ -11808,7 +11808,7 @@
                 "laravelcollective/html": "^6.0|^7.0",
                 "league/csv": "^9.0",
                 "maatwebsite/excel": ">=3.1",
-                "php": "^7.4",
+                "php": "^7.2|^8.0",
                 "ramsey/uuid": "^4.0",
                 "rap2hpoutre/fast-excel": "^1.7|^2.0",
                 "ricardosierra/changelog": "~1.4",
@@ -12001,7 +12001,7 @@
             },
             "require": {
                 "laravel/framework": "^7.0 || ^8.0",
-                "php": "^7.4",
+                "php": "^7.2|^8.0",
                 "sierratecnologia/media-manager": "dev-master",
                 "sierratecnologia/muleta": "dev-master"
             },
@@ -12103,7 +12103,7 @@
             },
             "require": {
                 "laravel/helpers": "^1.1",
-                "php": "^7.4",
+                "php": "^7.2|^8.0",
                 "propaganistas/laravel-phone": "^4.2.5",
                 "sierratecnologia/crypto": "dev-master"
             },
@@ -12171,7 +12171,7 @@
                 "laravel/helpers": "^1.1",
                 "laravel/passport": "^8.0|^9.0|^10.0",
                 "overtrue/laravel-follow": "^1.0",
-                "php": "^7.4",
+                "php": "^7.2|^8.0",
                 "ramsey/uuid": ">=3.8",
                 "sierratecnologia/crypto": "dev-master",
                 "sierratecnologia/integrations": "dev-master",
@@ -12455,7 +12455,7 @@
                 "illuminate/events": "^6.0|^7.0|^8.0",
                 "illuminate/support": "^6.0|^7.0|^8.0",
                 "league/flysystem": "^1.0.45",
-                "php": "^7.4",
+                "php": "^7.2|^8.0",
                 "spatie/laravel-schemaless-attributes": "^1.6",
                 "symfony/finder": "^4.2|^5.0",
                 "symfony/property-access": "^4.0|^5.0",
@@ -12610,7 +12610,7 @@
                 "illuminate/support": "^6.18|^7.0|^8.0",
                 "league/flysystem": "^1.0.64",
                 "maennchen/zipstream-php": "^1.0|^2.0",
-                "php": "^7.4",
+                "php": "^7.2|^8.0",
                 "spatie/image": "^1.4.0",
                 "spatie/temporary-directory": "^1.1",
                 "symfony/console": "^4.4|^5.0"
@@ -16770,7 +16770,7 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.4"
+        "php": "^7.2|^8.0"
     },
     "platform-dev": [],
     "plugin-api-version": "1.1.0"
