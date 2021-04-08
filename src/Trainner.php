@@ -5,7 +5,7 @@
 
 namespace Trainner;
 
-use App\Models\User;
+use Trainner\Models\User;
 use Arrilot\Widgets\Facade as Widget;
 use Bkwld\Library;
 use Config;

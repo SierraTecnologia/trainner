@@ -2,7 +2,7 @@
 
 namespace Trainner;
 
-use App;
+use Trainner;
 use Config;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Routing\Router;
