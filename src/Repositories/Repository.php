@@ -75,7 +75,7 @@ abstract class Repository implements RepositoryInterface {
             $model = $model->orderBy('created_at', 'desc');
         }
 
-        return $model->paginate(config('cms.pagination', 25));
+        return $model->paginate(config('siravel.pagination', 25));
     }
 
     /**
