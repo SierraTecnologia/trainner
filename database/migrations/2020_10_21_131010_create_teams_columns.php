@@ -19,15 +19,15 @@ class CreateTeamsColumns extends Migration
 
 
 
-        Schema::table(
-            'computers', function (Blueprint $table) {
-                $table->integer('team_id')->unsigned()->default(1)->nullable();
-                $table->foreign('team_id')
-                    ->references('id')
-                    ->on(\Config::get('teamwork.teams_table'))
-                    ->onDelete('cascade');
-            }
-        );
+        // Schema::table(
+        //     'computers', function (Blueprint $table) {
+        //         $table->integer('team_id')->unsigned()->default(1)->nullable();
+        //         $table->foreign('team_id')
+        //             ->references('id')
+        //             ->on(\Config::get('teamwork.teams_table'))
+        //             ->onDelete('cascade');
+        //     }
+        // );
         Schema::table(
             'groups', function (Blueprint $table) {
                 $table->integer('team_id')->unsigned()->default(1);

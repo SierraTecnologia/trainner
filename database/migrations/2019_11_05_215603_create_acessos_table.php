@@ -13,18 +13,18 @@ class CreateAcessosTable extends Migration
      */
     public function up()
     {
-        Schema::create('acessos', function (Blueprint $table) {
-            $table->increments('id')->unsigned();
+        // Schema::create('acessos', function (Blueprint $table) {
+        //     $table->increments('id')->unsigned();
 
-            $table->integer('computer_id')->unsigned();
-            $table->integer('group_id')->unsigned()->nullable();
-            $table->integer('playlist_id')->unsigned()->nullable();
+        //     $table->integer('computer_id')->unsigned();
+        //     $table->integer('group_id')->unsigned()->nullable();
+        //     $table->integer('playlist_id')->unsigned()->nullable();
 
-            $table->foreign('computer_id')->references('id')->on('computers');
-            $table->foreign('group_id')->references('id')->on('groups');
-            $table->foreign('playlist_id')->references('id')->on('playlists');
-            $table->timestamps();
-        });
+        //     $table->foreign('computer_id')->references('id')->on('computers');
+        //     $table->foreign('group_id')->references('id')->on('groups');
+        //     $table->foreign('playlist_id')->references('id')->on('playlists');
+        //     $table->timestamps();
+        // });
     }
 
     /**
