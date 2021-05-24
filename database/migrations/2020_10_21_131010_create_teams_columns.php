@@ -24,7 +24,7 @@ class CreateTeamsColumns extends Migration
         //         $table->integer('team_id')->unsigned()->default(1)->nullable();
         //         $table->foreign('team_id')
         //             ->references('id')
-        //             ->on(\Config::get('teamwork.teams_table'))
+        //             ->on(\Config::get('teamwork.teams_table', 'teams'))
         //             ->onDelete('cascade');
         //     }
         // );
@@ -33,7 +33,7 @@ class CreateTeamsColumns extends Migration
                 $table->integer('team_id')->unsigned()->default(1);
                 $table->foreign('team_id')
                     ->references('id')
-                    ->on(\Config::get('teamwork.teams_table'))
+                    ->on(\Config::get('teamwork.teams_table', 'teams'))
                     ->onDelete('cascade');
             }
         );
@@ -42,7 +42,7 @@ class CreateTeamsColumns extends Migration
                 $table->integer('team_id')->unsigned()->default(1)->nullable();
                 $table->foreign('team_id')
                     ->references('id')
-                    ->on(\Config::get('teamwork.teams_table'))
+                    ->on(\Config::get('teamwork.teams_table', 'teams'))
                     ->onDelete('cascade');
             }
         );
@@ -51,7 +51,7 @@ class CreateTeamsColumns extends Migration
                 $table->integer('team_id')->unsigned()->default(1);
                 $table->foreign('team_id')
                     ->references('id')
-                    ->on(\Config::get('teamwork.teams_table'))
+                    ->on(\Config::get('teamwork.teams_table', 'teams'))
                     ->onDelete('cascade');
             }
         );

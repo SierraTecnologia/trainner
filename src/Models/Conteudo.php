@@ -10,7 +10,7 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Request;
 
-class Computer extends Model
+class Conteudo extends Model
 {
 
     use UsedByTeams;
