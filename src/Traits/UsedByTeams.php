@@ -30,6 +30,15 @@ trait UsedByTeams
                 if (auth()->user() && auth()->user()->currentTeam) {
                     static::teamGuard();
                     $model->team_id = auth()->user()->currentTeam->getKey();
+                } else {
+                    if (!$trainnerTeam = \Trainner\Models\Team::first()) {
+                        $trainnerTeam = \Trainner\Models\Team::create(
+                            [
+                                'name' => 'Teste'
+                            ]
+                        );
+                    }
+                    $model->team_id = $trainnerTeam->id;
                 }
             }
         });

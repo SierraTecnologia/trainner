@@ -3,7 +3,7 @@
 namespace Trainner\Models;
 
 use Trainner\Notifications\ResetPassword;
-use Bkwld\Library\Utils\Text;
+use Muleta\Library\Utils\Text;
 use Carbon\Carbon;
 use Config;
 use FacilitadorURL;
