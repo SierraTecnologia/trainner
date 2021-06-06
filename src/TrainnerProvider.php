@@ -2,7 +2,7 @@
 
 namespace Trainner;
 
-use App;
+use Trainner;
 use Config;
 use Illuminate\Foundation\AliasLoader;
 use Illuminate\Routing\Router;
@@ -44,23 +44,24 @@ class TrainnerProvider extends ServiceProvider
      * Rotas do Menu
      */
     public static $menuItens = [
-        'Painel' => [
+        // 'Painel' => [
             // [
             //     'text' => 'Trainner',
             //     'icon' => 'fas fa-fw fa-gavel',
             // ],
             // 'Trainner' => [
                 [
-                    'text'        => 'Treinos',
-                    'route'       => 'trainner.home', //route('trainner.home'),
+                    'text'        => 'Alunos',
+                    'route'       => 'painel.trainner.trainners.index', //'trainner.home', //route('trainner.home'),
                     'icon'        => 'fas fa-fw fa-gavel',
                     'icon_color'  => 'blue',
                     'label_color' => 'success',
                     'section' => "painel",
+                    'feature' => 'academy',
                     // 'access' => \Porteiro\Models\Role::$ADMIN
                 ]
                 // ],
-        ],
+        // ],
     ];
 
     /**
@@ -72,10 +73,12 @@ class TrainnerProvider extends ServiceProvider
         // Register configs, migrations, etc
         $this->registerDirectories();
 
-        // // COloquei no register pq nao tava reconhecendo as rotas para o adminlte
-        // $this->app->booted(function () {
-        //     $this->routes();
-        // });
+        // COloquei no register pq nao tava reconhecendo as rotas para o adminlte
+        $this->app->booted(
+            function () {
+                $this->routes();
+            }
+        );
     }
 
     /**
@@ -101,11 +104,18 @@ class TrainnerProvider extends ServiceProvider
      */
     public function register()
     {
-        $this->mergeConfigFrom($this->getPublishesPath('config/sitec/trainner.php'), 'sitec.trainner');
+        $this->mergeConfigFrom(
+            $this->getPublishesPath('config/trainner.php'),
+            'sitec.trainner'
+        );
+        $this->mergeConfigFrom(
+            $this->getPublishesPath('config/teamwork.php'),
+            'sitec.trainner'
+        );
         
 
         $this->setProviders();
-        $this->routes();
+        // $this->routes();
 
 
 
@@ -134,7 +144,7 @@ class TrainnerProvider extends ServiceProvider
             TrainnerService::class,
             function ($app) {
                 Log::info('Singleton Trainner');
-                return new TrainnerService(\Illuminate\Support\Facades\Config::get('sitec.trainner'));
+                return new TrainnerService(\Illuminate\Support\Facades\Config::get('trainner'));
             }
         );
 
@@ -169,7 +179,8 @@ class TrainnerProvider extends ServiceProvider
         $this->publishes(
             [
             // Paths
-            $this->getPublishesPath('config'.DIRECTORY_SEPARATOR.'sitec') => config_path('sitec'),
+            $this->getPublishesPath('config'.DIRECTORY_SEPARATOR.'trainner.php') => config_path('trainner.php'),
+            $this->getPublishesPath('config'.DIRECTORY_SEPARATOR.'teamwork.php') => config_path('teamwork.php'),
             ],
             ['config',  'sitec', 'sitec-config']
         );

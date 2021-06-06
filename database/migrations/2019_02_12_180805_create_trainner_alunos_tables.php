@@ -18,8 +18,8 @@ class CreateTrainnerAlunosTables extends Migration
             'trainners', function (Blueprint $table) {
                 $table->string('code')->unique();                                                                                                                                                                      
                 $table->primary('code'); 
-                $table->string('code_top');
-                $table->string('code_bot');
+                $table->string('code_top')->nullable();
+                $table->string('code_bot')->nullable();
 
                 $table->date('init_at')->nullable();
 

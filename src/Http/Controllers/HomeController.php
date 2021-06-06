@@ -4,6 +4,7 @@ namespace Trainner\Http\Controllers;
 
 use Trainner\Services\TrainnerService;
 use Illuminate\Support\Facades\Schema;
+use Request;
 
 class HomeController extends Controller
 {
