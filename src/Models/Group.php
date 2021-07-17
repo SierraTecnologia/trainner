@@ -45,14 +45,14 @@ class Group extends Model
     
     public function playlist()
     {
-        return $this->belongsTo('App\Models\Playlist', 'playlist_id', 'id')->fromTeam($this->team_id);
+        return $this->belongsTo('Trainner\Models\Playlist', 'playlist_id', 'id')->fromTeam($this->team_id);
     }
     /**
      * Get the tokens record associated with the user.
      */
     public function computers()
     {
-        return $this->hasMany('App\Models\Computer', 'group_id', 'id')->fromTeam($this->team_id);
+        return $this->hasMany('Trainner\Models\Computer', 'group_id', 'id')->fromTeam($this->team_id);
     }
 
 

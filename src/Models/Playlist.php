@@ -77,7 +77,7 @@ class Playlist extends Model// implements AuditableContract //, Auditable;
 
     public function groups()
     {
-        return $this->hasMany('App\Models\Group')->fromTeam($this->team_id); //, 'group_id', 'id');
+        return $this->hasMany('Trainner\Models\Group')->fromTeam($this->team_id); //, 'group_id', 'id');
     }
 
     /**
@@ -92,7 +92,7 @@ class Playlist extends Model// implements AuditableContract //, Auditable;
      * Get all of the videos for the post.
      */
     public function videos() {
-        return $this->morphToMany(\App\Models\Video::class, 'videoable')
+        return $this->morphToMany(\Trainner\Models\Video::class, 'videoable')
             ->withTimestamps()
             ->fromTeam($this->team_id)
             ->withPivot('position')
@@ -141,7 +141,7 @@ class Playlist extends Model// implements AuditableContract //, Auditable;
 
     public function acessos()
     {
-        return $this->hasMany('App\Models\Acesso');
+        return $this->hasMany('Trainner\Models\Acesso');
     }
 
 

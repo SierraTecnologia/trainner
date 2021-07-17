@@ -4,15 +4,15 @@
     "type": "library",
     "keywords": [
         "sierratecnologia",
-        "transmissor"
+        "trainner"
     ],
     "license": "MIT",
-    "homepage": "https://sierratecnologia.com/packages/transmissor/",
+    "homepage": "https://sierratecnologia.com/packages/trainner/",
     "support": {
         "email": "help@sierratecnologia.com",
-        "issues": "https://github.com/sierratecnologia/transmissor/issues",
-        "source": "https://github.com/sierratecnologia/transmissor",
-        "docs": "https://github.com/sierratecnologia/transmissor/blob/master/README.md"
+        "issues": "https://github.com/sierratecnologia/trainner/issues",
+        "source": "https://github.com/sierratecnologia/trainner",
+        "docs": "https://github.com/sierratecnologia/trainner/blob/master/README.md"
     },
     "authors": [
         {
