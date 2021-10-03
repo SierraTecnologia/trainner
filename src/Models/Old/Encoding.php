@@ -51,9 +51,9 @@ class Encoding extends Model
      * Return an assoc array for output to JSON when admin asks
      * for progress on an encode
      *
-     * @return App\Models\Encoding
+     * @return static
      */
-    public function forProgress()
+    public function forProgress(): self
     {
         $this->setVisible(['status', 'message', 'admin_player', 'progress']);
         $this->setAppends(['admin_player', 'progress']);
@@ -93,8 +93,10 @@ class Encoding extends Model
 
     /**
      * Delete encoded files that are local to this filesystem
+     *
+     * @return void
      */
-    public function onDeleted()
+    public function onDeleted(): void
     {
         // Get the directory of an output
         if (($sources = (array) $this->outputs)      // Convert sources to an array
@@ -133,10 +135,11 @@ class Encoding extends Model
     /**
      * Get an instance of the configured encoding provider
      *
-     * @param  App\Models\Encoding
-     * @return Support\Template\Input\EncodingProviders\EncodingProvider
+     * @param App\Models\Encoding
+     *
+     * @return object
      */
-    public static function encoder(Encoding $model = null)
+    public static function encoder(Encoding $model = null): object
     {
         $class = Config::get('sitec.encode.provider');
 
@@ -230,7 +233,7 @@ class Encoding extends Model
     /**
      * Generate an HTML5 video tag with extra elements for displaying in the admin
      *
-     * @return string html
+     * @return null|string html
      */
     public function getAdminVideoTagAttribute()
     {
@@ -322,7 +325,7 @@ class Encoding extends Model
     /**
      * Generate an HTML5 video tag via Former's HtmlObject for the outputs
      *
-     * @return HtmlObject\Element
+     * @return HtmlElement|null
      */
     public function getTagAttribute()
     {

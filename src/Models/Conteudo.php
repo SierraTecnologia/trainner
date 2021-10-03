@@ -118,7 +118,7 @@ class Conteudo extends Model
     }
 
 
-    public function acessos()
+    public function acessos(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany('App\Models\Acesso');
     }
@@ -134,7 +134,7 @@ class Conteudo extends Model
     }
 
     // @todo
-    public function updateFromParams($params = [])
+    public function updateFromParams($params = []): void
     {
         if (empty($params)) {
             return ;
@@ -160,7 +160,7 @@ class Conteudo extends Model
         return $computer->getVideosToPlay();
     }
 
-    public static function getViaParamsToken($request = null)
+    public static function getViaParamsToken($request = null): Computer
     {
         return self::returnOrCreateByParams($request);
     }
@@ -211,7 +211,7 @@ class Conteudo extends Model
     }
 
 
-    public static function generateToken()
+    public static function generateToken(): string
     {
         $params = [
             'ip' => Request::ip()

@@ -19,10 +19,11 @@ class ComputerObserver implements ShouldQueue
     /**
      * Handle the computer "creating" event.
      *
-     * @param  \App\Models\Computer  $computer
-     * @return void
+     * @param Computer $computer
+     *
+     * @return true
      */
-    public function creating(Computer $computer)
+    public function creating(Computer $computer): bool
     {
         if ($computer->is_active=='') {
             $computer->is_active = 1;
@@ -37,10 +38,11 @@ class ComputerObserver implements ShouldQueue
     /**
      * Handle the computer "created" event.
      *
-     * @param  \App\Models\Computer  $computer
-     * @return void
+     * @param Computer $computer
+     *
+     * @return true
      */
-    public function created(Computer $computer)
+    public function created(Computer $computer): bool
     {
         return true;
     }
@@ -48,10 +50,11 @@ class ComputerObserver implements ShouldQueue
     /**
      * Handle the computer "updated" event.
      *
-     * @param  \App\Models\Computer  $computer
-     * @return void
+     * @param Computer $computer
+     *
+     * @return true
      */
-    public function updated(Computer $computer)
+    public function updated(Computer $computer): bool
     {
         return true;
     }
@@ -59,7 +62,8 @@ class ComputerObserver implements ShouldQueue
     /**
      * Handle the computer "deleted" event.
      *
-     * @param  \App\Models\Computer  $computer
+     * @param Computer $computer
+     *
      * @return void
      */
     public function deleted(Computer $computer)
@@ -70,7 +74,8 @@ class ComputerObserver implements ShouldQueue
     /**
      * Handle the computer "restored" event.
      *
-     * @param  \App\Models\Computer  $computer
+     * @param Computer $computer
+     *
      * @return void
      */
     public function restored(Computer $computer)
@@ -81,7 +86,8 @@ class ComputerObserver implements ShouldQueue
     /**
      * Handle the computer "force deleted" event.
      *
-     * @param  \App\Models\Computer  $computer
+     * @param Computer $computer
+     *
      * @return void
      */
     public function forceDeleted(Computer $computer)

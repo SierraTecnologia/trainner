@@ -16,10 +16,11 @@ class PlaylistObserver implements ShouldQueue
     /**
      * Handle the playlist "creating" event.
      *
-     * @param  \App\Models\Playlist  $playlist
-     * @return void
+     * @param Playlist $playlist
+     *
+     * @return true
      */
-    public function creating(Playlist $playlist)
+    public function creating(Playlist $playlist): bool
     {
         return true;
     }
@@ -27,10 +28,11 @@ class PlaylistObserver implements ShouldQueue
     /**
      * Handle the playlist "created" event.
      *
-     * @param  \App\Models\Playlist  $playlist
-     * @return void
+     * @param Playlist $playlist
+     *
+     * @return true
      */
-    public function created(Playlist $playlist)
+    public function created(Playlist $playlist): bool
     {
         return true;
     }
@@ -38,10 +40,11 @@ class PlaylistObserver implements ShouldQueue
     /**
      * Handle the playlist "updated" event.
      *
-     * @param  \App\Models\Playlist  $playlist
-     * @return void
+     * @param Playlist $playlist
+     *
+     * @return true
      */
-    public function updated(Playlist $playlist)
+    public function updated(Playlist $playlist): bool
     {
         return true;
     }
@@ -49,7 +52,8 @@ class PlaylistObserver implements ShouldQueue
     /**
      * Handle the playlist "deleted" event.
      *
-     * @param  \App\Models\Playlist  $playlist
+     * @param Playlist $playlist
+     *
      * @return void
      */
     public function deleted(Playlist $playlist)
@@ -60,7 +64,8 @@ class PlaylistObserver implements ShouldQueue
     /**
      * Handle the playlist "restored" event.
      *
-     * @param  \App\Models\Playlist  $playlist
+     * @param Playlist $playlist
+     *
      * @return void
      */
     public function restored(Playlist $playlist)
@@ -71,7 +76,8 @@ class PlaylistObserver implements ShouldQueue
     /**
      * Handle the playlist "force deleted" event.
      *
-     * @param  \App\Models\Playlist  $playlist
+     * @param Playlist $playlist
+     *
      * @return void
      */
     public function forceDeleted(Playlist $playlist)

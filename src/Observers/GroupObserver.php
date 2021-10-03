@@ -23,10 +23,11 @@ class GroupObserver implements ShouldQueue
     /**
      * Handle the group "creating" event.
      *
-     * @param  \App\Models\Group  $group
-     * @return void
+     * @param Group $group
+     *
+     * @return true
      */
-    public function creating(Group $group)
+    public function creating(Group $group): bool
     {
         
         return true;
@@ -35,7 +36,8 @@ class GroupObserver implements ShouldQueue
     /**
      * Handle the group "created" event.
      *
-     * @param  \App\Models\Group  $group
+     * @param Group $group
+     *
      * @return void
      */
     public function created(Group $group)
@@ -46,7 +48,8 @@ class GroupObserver implements ShouldQueue
     /**
      * Handle the group "change" event.
      *
-     * @param  \App\Models\Group  $group
+     * @param Group $group
+     *
      * @return void
      */
     public function change(Group $group)
@@ -57,7 +60,8 @@ class GroupObserver implements ShouldQueue
     /**
      * Handle the group "updated" event.
      *
-     * @param  \App\Models\Group  $group
+     * @param Group $group
+     *
      * @return void
      */
     public function updated(Group $group)
@@ -68,7 +72,8 @@ class GroupObserver implements ShouldQueue
     /**
      * Handle the group "deleted" event.
      *
-     * @param  \App\Models\Group  $group
+     * @param Group $group
+     *
      * @return void
      */
     public function deleted(Group $group)
@@ -79,7 +84,8 @@ class GroupObserver implements ShouldQueue
     /**
      * Handle the group "restored" event.
      *
-     * @param  \App\Models\Group  $group
+     * @param Group $group
+     *
      * @return void
      */
     public function restored(Group $group)
@@ -90,7 +96,8 @@ class GroupObserver implements ShouldQueue
     /**
      * Handle the group "force deleted" event.
      *
-     * @param  \App\Models\Group  $group
+     * @param Group $group
+     *
      * @return void
      */
     public function forceDeleted(Group $group)

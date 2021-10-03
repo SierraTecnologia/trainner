@@ -66,8 +66,10 @@ class TrainnerProvider extends ServiceProvider
 
     /**
      * Alias the services in the boot.
+     *
+     * @return void
      */
-    public function boot()
+    public function boot(): void
     {
         
         // Register configs, migrations, etc
@@ -194,7 +196,7 @@ class TrainnerProvider extends ServiceProvider
         $this->loadTranslations();
     }
 
-    private function loadViews()
+    private function loadViews(): void
     {
         // View namespace
         $viewsPath = $this->getResourcesPath('views');
@@ -207,7 +209,7 @@ class TrainnerProvider extends ServiceProvider
         );
     }
     
-    private function loadTranslations()
+    private function loadTranslations(): void
     {
         // Publish lanaguage files
         $this->publishes(
