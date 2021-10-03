@@ -43,17 +43,17 @@ class Acesso extends Model
     {
         return $query->where('created_at', '>=', Carbon::now()->subMinutes($interval)->toDateTimeString());
     }
-    public function playlist()
+    public function playlist(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo('App\Models\Playlist', 'playlist_id', 'id');
     }
     
-    public function group()
+    public function group(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo('App\Models\Group', 'group_id', 'id');
     }
     
-    public function computer()
+    public function computer(): \Illuminate\Database\Eloquent\Relations\BelongsTo
     {
         return $this->belongsTo('App\Models\Computer', 'computer_id', 'id');
     }

@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Log;
 
 class Model extends EloquentModel
 {
-    public function hasAttribute($attr)
+    public function hasAttribute($attr): bool
     {
         return array_key_exists($attr, $this->attributes);
     }
@@ -24,7 +24,7 @@ class Model extends EloquentModel
         parent::boot();
     }
 
-    public function validateAndSetFromRequestAndSave(Request $request)
+    public function validateAndSetFromRequestAndSave(Request $request): bool
     {
         try {
             $request->validate(static::RULES);
@@ -35,13 +35,13 @@ class Model extends EloquentModel
         return $this->setFromRequestAndSave($request);
     }
 
-    public function setFromRequestAndSave(Request $request)
+    public function setFromRequestAndSave(Request $request): bool
     {
         $this->setFromRequest($request);
         return $this->save();
     }
 
-    public function setFromRequest(Request $request)
+    public function setFromRequest(Request $request): void
     {
         foreach ($this->fillable as $field) {
             if ($request->has($field) && $request->get($field)!='/') {

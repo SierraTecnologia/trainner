@@ -68,8 +68,10 @@ class Video extends Model
 
     /**
      * Get all of the playlists for the post.
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphToMany
      */
-    public function playlists() {
+    public function playlists(): self {
         return $this->morphedByMany(\Trainner\Models\Playlist::class, 'videoable')
             ->withTimestamps();
     }

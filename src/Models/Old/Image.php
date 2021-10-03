@@ -148,8 +148,10 @@ class Image extends Model
 
     /**
      * Polymorphic relationship
+     *
+     * @return \Illuminate\Database\Eloquent\Relations\MorphTo
      */
-    public function imageable()
+    public function imageable(): \Illuminate\Database\Eloquent\Relations\MorphTo
     {
         return $this->morphTo();
     }
@@ -234,10 +236,11 @@ class Image extends Model
     /**
      * Get file type
      *
-     * @param  UploadedFile
-     * @return string
+     * @param UploadedFile
+     *
+     * @return null|string
      */
-    protected function guessFileType(UploadedFile $file)
+    protected function guessFileType(UploadedFile $file): ?string
     {
         $type = $file->guessClientExtension();
         switch ($type) {
@@ -306,9 +309,9 @@ class Image extends Model
      * possible that "file" is empty, in which case this returns an empty string.
      * This clears the stored config on every call.
      *
-     * @return string
+     * @return null|string
      */
-    public function getUrlAttribute()
+    public function getUrlAttribute(): ?string
     {
         // Figure out the URL
         $url = $this->getLAttribute(); // The benchmark
@@ -381,7 +384,7 @@ class Image extends Model
     /**
      * Convert the focal_point attribute to a CSS background-position.
      *
-     * @return string
+     * @return null|string
      */
     public function getBackgroundPositionAttribute()
     {
@@ -397,7 +400,7 @@ class Image extends Model
      * background-position.  This is also used in the serialization conversion
      * and is named to be friendly to that format.
      *
-     * @return string
+     * @return null|string
      */
     public function getBkgdPosAttribute()
     {
@@ -423,89 +426,89 @@ class Image extends Model
      * 1366, which we take to be the 1x "desktop" resolution.  1366 is currently
      * the most popular desktop resolution.
      *
-     * @return string
+     * @return null|string
      */
-    public function getIconAttribute()
+    public function getIconAttribute(): ?string
     {
         return $this->urlify('icon');
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getXsAttribute()
+    public function getXsAttribute(): ?string
     {
         return $this->urlify('xs');
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getXs2xAttribute()
+    public function getXs2xAttribute(): ?string
     {
         return $this->urlify('xs', 2);
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getSAttribute()
+    public function getSAttribute(): ?string
     {
         return $this->urlify('s');
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getS2xAttribute()
+    public function getS2xAttribute(): ?string
     {
         return $this->urlify('s', 2);
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getMAttribute()
+    public function getMAttribute(): ?string
     {
         return $this->urlify('m');
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getM2xAttribute()
+    public function getM2xAttribute(): ?string
     {
         return $this->urlify('m', 2);
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getLAttribute()
+    public function getLAttribute(): ?string
     {
         return $this->urlify('l');
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getL2xAttribute()
+    public function getL2xAttribute(): ?string
     {
         return $this->urlify('l', 2);
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getXlAttribute()
+    public function getXlAttribute(): ?string
     {
         return $this->urlify('xl');
     }
 
     /**
-     * @return string
+     * @return null|string
      */
-    public function getXl2xAttribute()
+    public function getXl2xAttribute(): ?string
     {
         return $this->urlify('xl', 2);
     }
@@ -514,11 +517,13 @@ class Image extends Model
      * Make paths full URLs so these can be used directly in APIs or for Open
      * Graph tags, for example.
      *
-     * @param  string $size
-     * @param  number $scale
-     * @return string url
+     * @param string $size
+     * @param number $scale
+     * @param int $multiplier
+     *
+     * @return null|string url
      */
-    public function urlify($size, $multiplier = 1)
+    public function urlify($size, int $multiplier = 1): ?string
     {
         // Get fluent config
         $config = $this->getConfig();
@@ -558,10 +563,11 @@ class Image extends Model
     /**
      * Get a percent number from a string
      *
-     * @param  string|number val
-     * @return float
+     * @param string|number val
+     *
+     * @return float|null
      */
-    protected function perc($val)
+    protected function perc($val): ?float
     {
         if (preg_match('#([\d\.]+)%$#', $val, $matches)) {
             return floatval($matches[1])/100;
@@ -631,7 +637,11 @@ class Image extends Model
         );
     }
 
-    public function remember($attribute, $closure)
+    /**
+     * @param string $attribute
+     * @param \Closure $closure
+     */
+    public function remember(string $attribute, \Closure $closure)
     {
         $key = $attribute.'_'.$this->location;
 

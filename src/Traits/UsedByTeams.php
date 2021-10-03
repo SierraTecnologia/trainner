@@ -14,8 +14,10 @@ trait UsedByTeams
 {
     /**
      * Boot the global scope.
+     *
+     * @return void
      */
-    protected static function bootUsedByTeams()
+    protected static function bootUsedByTeams(): void
     {
         static::addGlobalScope('team', function (Builder $builder) {
             if (!app()->runningInConsole() /*&& (auth()->guest() || !auth()->user()->isAdmin())*/) {
@@ -52,7 +54,10 @@ trait UsedByTeams
     {
         return $query->withoutGlobalScope('team');
     }
-    public function scopeFromTeam(Builder $query, $teamId)
+    /**
+     * @return \Illuminate\Database\Eloquent\Builder
+     */
+    public function scopeFromTeam(Builder $query, $teamId): self
     {
         return $query->withoutGlobalScope('team')->where($query->getQuery()->from.'.team_id', $teamId);
     }
@@ -67,8 +72,10 @@ trait UsedByTeams
 
     /**
      * @throws Exception
+     *
+     * @return void
      */
-    protected static function teamGuard()
+    protected static function teamGuard(): void
     {
         if (!app()->runningInConsole() && (auth()->guest() || !auth()->user()->currentTeam)) {
             throw new Exception('No authenticated user with selected team present.');

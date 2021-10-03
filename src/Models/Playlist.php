@@ -39,7 +39,7 @@ class Playlist extends Model// implements AuditableContract //, Auditable;
     public static $STATUS_NOT_PROCESSED = 4;
 
 
-    protected static function paramsForOldVersionZeroPointOne(Array $params)
+    protected static function paramsForOldVersionZeroPointOne(Array $params): void
     {
         // Será feita em versẽs futuras
         // if ($params['status']==0) {
@@ -102,7 +102,7 @@ class Playlist extends Model// implements AuditableContract //, Auditable;
     {
         return $this->videoUp($positionToUpdate);
     }
-    public function videoUp($positionToUpdate)
+    public function videoUp($positionToUpdate): void
     {
         $position = 0;
         foreach ($this->videos()->get() as $video) {
@@ -118,7 +118,7 @@ class Playlist extends Model// implements AuditableContract //, Auditable;
     {
         return $this->videoDown($positionToUpdate);
     }
-    public function videoDown($positionToUpdate)
+    public function videoDown($positionToUpdate): void
     {
         $position = 0;
         foreach ($this->videos()->get() as $video) {
@@ -130,7 +130,7 @@ class Playlist extends Model// implements AuditableContract //, Auditable;
             ++$position;
         }
     }
-    public function updateOrderVideos()
+    public function updateOrderVideos(): void
     {
         $position = 0;
         foreach ($this->videos()->get() as $video) {
@@ -139,21 +139,23 @@ class Playlist extends Model// implements AuditableContract //, Auditable;
         }
     }
 
-    public function acessos()
+    public function acessos(): \Illuminate\Database\Eloquent\Relations\HasMany
     {
         return $this->hasMany('Trainner\Models\Acesso');
     }
 
 
-    public function getStatusSpan()
+    public function getStatusSpan(): string
     {
         return '<span class="label label-'.$this->getStatusColor().'">'.$this->getStatusName().'</span>';
     }
 
     /**
      * Responde uma string da Forma de Pagamento
+     *
+     * @return string
      */
-    public function getStatusName()
+    public function getStatusName(): string
     {
         if ($this->status==self::$STATUS_ANALYSIS) {
             return 'Em analise';
@@ -172,8 +174,12 @@ class Playlist extends Model// implements AuditableContract //, Auditable;
 
     /**
      * Responde uma string da Forma de Pagamento
+     *
+     * @return string
+     *
+     * @psalm-return 'danger'|'success'|'warning'
      */
-    public function getStatusColor()
+    public function getStatusColor(): string
     {
         if ($this->status==self::$STATUS_ANALYSIS) {
             return 'warning';
@@ -190,7 +196,7 @@ class Playlist extends Model// implements AuditableContract //, Auditable;
         return 'danger';
     }
 
-    public function getStatusNameForApi()
+    public function getStatusNameForApi(): string
     {
         // @todo Descobrir todos os códigos
 
@@ -219,7 +225,7 @@ class Playlist extends Model// implements AuditableContract //, Auditable;
     }
 
 
-    public function getIp()
+    public function getIp(): ?string
     {
         // @todo
         return Request::ip();

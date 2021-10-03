@@ -16,10 +16,11 @@ class MediaObserver implements ShouldQueue
     /**
      * Handle the media "created" event.
      *
-     * @param  \App\Models\Media  $media
-     * @return void
+     * @param Media $media
+     *
+     * @return true
      */
-    public function created(Media $media)
+    public function created(Media $media): bool
     {
         return true;
     }
@@ -27,10 +28,11 @@ class MediaObserver implements ShouldQueue
     /**
      * Handle the media "updated" event.
      *
-     * @param  \App\Models\Media  $media
-     * @return void
+     * @param Media $media
+     *
+     * @return true
      */
-    public function updated(Media $media)
+    public function updated(Media $media): bool
     {
         return true;
     }
@@ -38,7 +40,8 @@ class MediaObserver implements ShouldQueue
     /**
      * Handle the media "deleted" event.
      *
-     * @param  \App\Models\Media  $media
+     * @param Media $media
+     *
      * @return void
      */
     public function deleted(Media $media)
@@ -49,7 +52,8 @@ class MediaObserver implements ShouldQueue
     /**
      * Handle the media "restored" event.
      *
-     * @param  \App\Models\Media  $media
+     * @param Media $media
+     *
      * @return void
      */
     public function restored(Media $media)
@@ -60,7 +64,8 @@ class MediaObserver implements ShouldQueue
     /**
      * Handle the media "force deleted" event.
      *
-     * @param  \App\Models\Media  $media
+     * @param Media $media
+     *
      * @return void
      */
     public function forceDeleted(Media $media)
