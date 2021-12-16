@@ -105,7 +105,7 @@ class Conteudo extends Model
      * Get localized siblings of this model
      *
      * @param  Illuminate\Database\Query\Builder $query
-     * @return Illuminate\Database\Query\Builder
+     * @return \Illuminate\Database\Query\Builder
      */
     public function scopeIsBlock($query)
     {

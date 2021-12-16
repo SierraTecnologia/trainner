@@ -337,7 +337,7 @@ class User extends Model implements
     /**
      * Tweak some validation rules
      *
-     * @param Illuminate\Validation\Validator $validation
+     * @param \Illuminate\Validation\Validator $validation
      */
     public function onValidating($validation)
     {
